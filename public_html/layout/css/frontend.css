@@ -3894,6 +3894,8 @@ a:hover {
   height: 62px;
   line-height: 65px;
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 .toolbar:after {
   content: "";
@@ -4046,6 +4048,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 .container {
   width: 990px;
@@ -4086,6 +4089,10 @@ svg g {
 }
 .scroll-fix--on {
   pointer-events: initial;
+}
+.header {
+  float: left;
+  width: 100%;
 }
 .contacts .header {
   padding-top: 75px;
@@ -4128,6 +4135,8 @@ svg g {
   padding-left: 480px;
 }
 .page {
+  float: left;
+  width: 100%;
   padding-bottom: 50px;
 }
 .index .page {
