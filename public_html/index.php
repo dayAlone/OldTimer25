@@ -14,9 +14,19 @@ $APPLICATION->SetPageProperty('body_class', "index");
     <h3 class="center"><span>95 </span>главных машин страны. <span>95 </span>удивительных историй.
       <br/><span>95 </span>лет Гаражу Особого Назначения.
     </h3>
-    <div class="slider"><a href="#" data-direction="&lt;" class="slider__arrow slider__arrow--prev"><img src="/layout/images/svg/left.svg" alt=""></a><a href="#" data-direction="&gt;" class="slider__arrow slider__arrow--next"><img src="/layout/images/svg/right.svg" alt=""></a>
-      <div data-width="100%" data-autoplay="true" data-nav="false" data-loop="true" data-transition-duration="1000" data-shadow="false" class="fotorama slider__fotorama"><img src="/layout/images/slider.jpg" alt=""><img src="/layout/images/slider.jpg" alt=""><img src="/layout/images/slider.jpg" alt=""></div>
-    </div>
+    <?
+        $APPLICATION->IncludeComponent("bitrix:news.detail", "gallery", Array(
+          "IBLOCK_ID"     => 43,
+          "ELEMENT_CODE"  => 'index',
+          "CHECK_DATES"   => "N",
+          "IBLOCK_TYPE"   => "25",
+          "SET_TITLE"     => "Y",
+          "CACHE_TYPE"    => "A",
+          "FIELD_CODE"    => array('PREVIEW_PICTURE'),
+          "PROPERTY_CODE" => array("IMAGES")
+        ));
+    ?>
+    
     <p class="center">
       Коллекцию автомобилей первых лиц государства показывают крайне редко. <br/>
       Не упустите свой шанс увидеть её. Уникальная выставка в Сокольниках <br/>
