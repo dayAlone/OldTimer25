@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang='ru'>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=1025, initial-scale=.7">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -10,6 +10,7 @@
   $APPLICATION->AddHeadScript('/layout/js/frontend.js');
   global $CITY;
   ?>
+  <link href="https://fonts.googleapis.com/css?family=Oranienbaum&amp;subset=latin,cyrillic-ext" rel="stylesheet">
   <title><?php
     $rsSites = CSite::GetByID(SITE_ID);
     $arSite  = $rsSites->Fetch();
