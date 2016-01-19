@@ -51,7 +51,8 @@ $APPLICATION->SetTitle('Проезд / расписание / билеты');
     <div class="modal-content"><a data-dismiss="modal" href="#" class="close"></a>
       <h3 class="center">КАК ДОБРАТЬСЯ НА МЕТРО</h3>
       <div class="center">
-        <p>Выставочный центр располагается на территории парка «Сокольники», <br>в 10 минутах ходьбы от станции метро «Сокольники».</p><img src="/layout/images/metro.jpg">
+        <p>Выставочный центр располагается на территории парка «Сокольники», <br>в 10 минутах ходьбы от станции метро «Сокольники».</p>
+        <img src="/layout/images/zuzu_fuss.jpg">
       </div>
     </div>
   </div>
@@ -61,7 +62,12 @@ $APPLICATION->SetTitle('Проезд / расписание / билеты');
     <div class="modal-content"><a data-dismiss="modal" href="#" class="close"></a>
       <h3 class="center">СХЕМА ВЫСТАВОЧНОГО ЦЕНТРА С ПАРКОВКАМИ</h3>
       <div class="center">
-        <p>Выставочный центр предоставляет посетителям около 2000 паковочных машиномест.<br>Стоимость въезда на территорию КВЦ "Сокольники" и парковки – 250 руб.</p><img src="/layout/images/auto.jpg">
+          <p>
+              Заезд на автомобиле осуществляется через 3-й Лучевой просек.<br>
+              Въезд на территорию – 300 руб. <br>
+              Машину можно оставить на специально оборудованных паркингах.
+          </p>
+          <img src="/layout/images/auto.jpg">
       </div>
     </div>
   </div>
