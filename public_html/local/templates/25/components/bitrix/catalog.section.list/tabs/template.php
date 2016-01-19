@@ -7,7 +7,7 @@
 </ul>
 <div class="tab-content">
     <?foreach ($arResult['SECTIONS'] as $key => $value) {?>
-      <div id="t-<?=$key?>" role="tabpanel" class="tab-pane <?=($key==0 ?'fade in':'')?> active">
+      <div id="t-<?=$key?>" role="tabpanel" class="tab-pane <?=($key==0 ?'fade in active':'')?> ">
           <?php
               $APPLICATION->IncludeComponent("bitrix:news.list", "articles",
               array(
