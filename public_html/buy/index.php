@@ -16,4 +16,5 @@ $APPLICATION->SetTitle('Билет он-лайн');
       </p>
     </div>
   </div>
+</div>
 <?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');?>
