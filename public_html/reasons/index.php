@@ -24,6 +24,7 @@ $APPLICATION->SetTitle('12 причин посетить');
              false
           );
       ?>
+      <div class="center"><a href="/buy/" class="button">купить билет онлайн</a></div>
   </div>
 </div>
 <?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');?>
