@@ -13,7 +13,7 @@
               array(
                   "IBLOCK_ID"           => 44,
                   "NEWS_COUNT"          => "99999",
-                  "SORT_BY1"            => "SECTION_ID",
+                  "SORT_BY1"            => "SORT",
                   "SORT_ORDER1"         => "ASC",
                   "PROPERTY_CODE"       => array('LINK'),
                   "PARENT_SECTION"      => $value['ID'],

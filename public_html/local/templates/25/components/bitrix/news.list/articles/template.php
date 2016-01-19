@@ -9,7 +9,7 @@
                 <a data-url="<?=$link?>" href="#Modal" data-toggle="modal" style="background-image:url(<?=$item['PREVIEW_PICTURE']['SRC']?>);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=$item['PREVIEW_PICTURE']['SRC']?>', sizingMethod='scale');-ms-filter: &quot;progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=$item['PREVIEW_PICTURE']['SRC']?>', sizingMethod='scale')&quot;;" class="preview__image"></a>
                 <a data-url="<?=$link?>" href="#Modal" data-toggle="modal" class="preview__title"><?=$item['NAME']?></a>
             <? else: ?>
-                <div class='preview__image' style="background-image: url(/layout/images/car.jpg)"></div>
+                <div class='preview__image' style="background-image:url(<?=$item['PREVIEW_PICTURE']['SRC']?>);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=$item['PREVIEW_PICTURE']['SRC']?>', sizingMethod='scale');-ms-filter: &quot;progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=$item['PREVIEW_PICTURE']['SRC']?>', sizingMethod='scale')&quot;;"></div>
                 <div class='preview__title'><?=$item['NAME']?></div>
             <? endif;?>
             <p class="preview__text"><?=$item['PREVIEW_TEXT']?></p>
