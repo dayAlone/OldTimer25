@@ -1338,8 +1338,8 @@ svg g {
 .page .slider + p + .center {
   margin-bottom: 100px;
 }
-.page .year {
-  margin-bottom: 40px;
+.page .year .row {
+  margin-top: 40px;
 }
 .page .year__image {
   -webkit-background-size: cover;
