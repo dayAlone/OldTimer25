@@ -9,7 +9,7 @@ $aMenuLinks = Array(
     ),
     Array(
         "гараж особого назначения",
-        "/",
+        "/index.php",
         array(),
         array(),
         ""

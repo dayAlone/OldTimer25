@@ -1,19 +1,10 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
+$APPLICATION->SetPageProperty('body_class', "index");
 ?>
-    <?
-		$APPLICATION->IncludeComponent("bitrix:news.list", "promos",
-			array(
-				"IBLOCK_ID"            => 42,
-				"NEWS_COUNT"           => "3",
-				"SORT_BY1"             => "SORT",
-				"SORT_ORDER1"          => "ASC",
-				"CACHE_TYPE"           => "A",
-                'FIELD_CODE'           => array('DETAIL_PICTURE'),
-				'PROPERTY_CODE'        => array('CLASS', 'BG'),
-				"SET_TITLE"            => "N"
-			),
-			false
-		);
-	?>
+<header class="header">
+  <div class="container">
+    <h4>95 лет на службе отечеству</h4><img src="/layout/images/title.enter.png" alt=""><a href="#" class="button">о выставке</a><a href="#" class="button button--blue">купить билет</a>
+  </div>
+</header>
 <?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');?>
