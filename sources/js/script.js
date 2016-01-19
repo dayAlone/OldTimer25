@@ -75,6 +75,12 @@
       }, '500', 'swing');
       return e.preventDefault();
     });
+    $('a[href="#start"]').on('click', function(e) {
+      $('html, body').stop().animate({
+        scrollTop: $('h3').offset().top - 50
+      }, '500', 'swing');
+      return e.preventDefault();
+    });
     $(".years__item").on('click', function(e) {
       var id;
       id = $(this).data('value');

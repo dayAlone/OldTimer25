@@ -5,7 +5,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
 <header class="header">
   <div class="container">
     <h4>95 лет на службе отечеству</h4><img src="/layout/images/title.enter.png" alt="">
-    <a href="#years" class="button">о выставке</a>
+    <a href="#start" class="button">о выставке</a>
     <a href="/buy/" class="button button--blue">купить билет</a>
   </div>
 </header>
@@ -36,7 +36,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
     <div class="center">
       <h2>Кремлёвская коллекция<span>5 дней в Сокольниках</span></h2>
     </div>
-    
+
     <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list","years",
         Array(
                 "IBLOCK_TYPE"         => 'content',
