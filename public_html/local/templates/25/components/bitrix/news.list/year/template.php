@@ -14,5 +14,5 @@
       </div>
       <?endif;?>
     </div>
-    <? require('../articles/template.php') ?>
+    <? require($_SERVER['DOCUMENT_ROOT'].'/local/templates/25/components/bitrix/news.list/articles/template.php') ?>
 </div>
