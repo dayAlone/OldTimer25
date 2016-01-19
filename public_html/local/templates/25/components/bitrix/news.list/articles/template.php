@@ -10,7 +10,7 @@
                 <a data-url="<?=$link?>" href="#Modal" data-toggle="modal" class="preview__title"><?=$item['NAME']?></a>
             <? else: ?>
                 <div class='preview__image' style="background-image: url(/layout/images/car.jpg)"></div>
-                <divclass="preview__title"></div>
+                <div class='preview__title'><?=$item['NAME']?></div>
             <? endif;?>
             <p class="preview__text"><?=$item['PREVIEW_TEXT']?></p>
         </div>
