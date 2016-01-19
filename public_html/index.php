@@ -59,22 +59,36 @@ $APPLICATION->SetPageProperty('body_class', "index");
     <div class="center">
       <div class="divider"></div>
     </div>
-    <ul class="nav-tabs">
-      <li role="presentation" class="active"><a href="#t-1" aria-controls="t-1" role="tab" data-toggle="tab">Автомобили выездной охраны</a></li>
-      <li role="presentation"><a href="#t-2" aria-controls="t-2" role="tab" data-toggle="tab">Aвтобусы</a></li>
-      <li role="presentation"><a href="#t-3" aria-controls="t-3" role="tab" data-toggle="tab">Мотоциклы почётного эскорта</a></li>
-    </ul>
-    <div class="tab-content">
-      <div id="t-1" role="tabpanel" class="tab-pane fade in active">
-
-      </div>
-      <div id="t-2" role="tabpanel" class="tab-pane">
-
-      </div>
-      <div id="t-3" role="tabpanel" class="tab-pane">
-
-      </div>
-    </div>
+    <?php
+        $APPLICATION->IncludeComponent("bitrix:news.list", "tabs",
+        array(
+            "IBLOCK_ID"           => 44,
+            "NEWS_COUNT"          => "99999",
+            "SORT_BY1"            => "SECTION_ID",
+            "SORT_ORDER1"         => "ASC",
+            "PROPERTY_CODE"       => array('LINK'),
+            "CACHE_TYPE"          => "A",
+            "DISPLAY_PANEL"       => "N",
+            "PARENT_SECTION_CODE" => "tabs",
+            "SET_TITLE"           => "N"
+           ),
+           false
+        );
+    ?>
+    <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list","tabs",
+        Array(
+                "IBLOCK_TYPE"         => "",
+                "IBLOCK_ID"           => "",
+                "SECTION_CODE"        => "tabs",
+                "TOP_DEPTH"           => "2",
+                "SECTION_FIELDS"      => "",
+                "ADD_SECTIONS_CHAIN"  => "Y",
+                "CACHE_TYPE"          => "A",
+                "CACHE_TIME"          => "36000000",
+                "CACHE_NOTES"         => "",
+                "CACHE_GROUPS"        => "Y"
+            )
+        );?>
     <div class="center"><a href="/buy/" class="button">посетить выставку</a></div>
   </div>
 </div>
