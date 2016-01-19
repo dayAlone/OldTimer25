@@ -8,7 +8,7 @@ $APPLICATION->SetTitle('Проезд / расписание / билеты');
 </div>
 <div class="page">
   <div class="container">
-    <div class="row text">
+    <div class="row">
       <div class="col-xs-4">
         <h4>Билеты</h4>
         <p>
