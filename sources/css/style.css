@@ -1700,16 +1700,11 @@ svg g {
 }
 .modal-content .text {
   font-size: 15px;
-  margin-top: 0px;
-}
-@media (min-width: 1420px) {
-  .modal-content .text {
-    margin-top: 60px;
-    font-size: 16px;
-  }
+  margin-top: 60px;
 }
 .modal-content .text .content div {
   float: none !important;
+  margin-bottom: 20px;
 }
 .modal-content .text h4 {
   font-family: 'FuturaOld', 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
@@ -1717,27 +1712,6 @@ svg g {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
-  margin-top: 40px;
-}
-@media (min-width: 992px) {
-  .modal-content .text h4 {
-    margin-top: 0px;
-  }
-}
-.modal-content .text h4.place {
-  margin-top: 40px;
-}
-@media (min-width: 1420px) {
-  .modal-content .text h4.place {
-    margin-top: 0px;
-  }
-}
-.modal-content .text a {
-  color: #fff;
-  text-decoration: underline;
-}
-.modal-content .text a:hover {
-  color: #d2091d;
 }
 .modal-content iframe {
   max-width: 100%;
