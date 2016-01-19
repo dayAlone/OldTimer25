@@ -55,15 +55,21 @@ $(document).ready ->
 		$(".years__item").mod 'active', false
 		$(".years__item").filter("[data-value=#{id}]").mod 'active', true
 
+	getData = (id)->
+		value = $(".years__item").filter("[data-value=#{id}]").data 'id'
+		if value != $('.year').data 'id'
+			$('.year').data 'id', value
+			$.get '/get.php?id=' + value, (data) ->
+				$('.year').html $(data).html()
+
 	slider.noUiSlider
 		.on 'slide', (e)->
 			id = parseInt e[0]
 			setSliderActive id
 	slider.noUiSlider
-		.on 'change set', (e)->
-			id = parseInt e[0]
-			$.get '/get.php?id=' + $(".years__item").filter("[data-value=#{id}]").data 'id', (data) ->
-				$('.year').html $(data).html()
+		.on 'set', (e)->
+			getData parseInt e[0]
+
 
 	$('a[href="#years"]').on 'click', (e)->
 		$('html, body').stop().animate { scrollTop: $('h2').offset().top - 50 }, '500', 'swing'

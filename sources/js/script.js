@@ -38,7 +38,7 @@
   calculateLayout = function() {};
 
   $(document).ready(function() {
-    var setSliderActive, slider;
+    var getData, setSliderActive, slider;
     $('.nav-tabs a').on('click', function(e) {
       console.log(123);
       $(this).tab('show');
@@ -61,17 +61,23 @@
       $(".years__item").mod('active', false);
       return $(".years__item").filter("[data-value=" + id + "]").mod('active', true);
     };
+    getData = function(id) {
+      var value;
+      value = $(".years__item").filter("[data-value=" + id + "]").data('id');
+      if (value !== $('.year').data('id')) {
+        $('.year').data('id', value);
+        return $.get('/get.php?id=' + value, function(data) {
+          return $('.year').html($(data).html());
+        });
+      }
+    };
     slider.noUiSlider.on('slide', function(e) {
       var id;
       id = parseInt(e[0]);
       return setSliderActive(id);
     });
-    slider.noUiSlider.on('change set', function(e) {
-      var id;
-      id = parseInt(e[0]);
-      return $.get('/get.php?id=' + $(".years__item").filter("[data-value=" + id + "]").data('id', function(data) {
-        return $('.year').html($(data).html());
-      }));
+    slider.noUiSlider.on('set', function(e) {
+      return getData(parseInt(e[0]));
     });
     $('a[href="#years"]').on('click', function(e) {
       $('html, body').stop().animate({
