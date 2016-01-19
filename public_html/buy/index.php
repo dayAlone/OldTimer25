@@ -1,6 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('body_class', "buy");
+$APPLICATION->SetTitle('Билет он-лайн');
 ?>
 <header class="header">
   <div class="container"><img src="/layout/images/title.buy.png" alt=""></div>
