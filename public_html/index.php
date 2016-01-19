@@ -4,7 +4,9 @@ $APPLICATION->SetPageProperty('body_class', "index");
 ?>
 <header class="header">
   <div class="container">
-    <h4>95 лет на службе отечеству</h4><img src="/layout/images/title.enter.png" alt=""><a href="#" class="button">о выставке</a><a href="#" class="button button--blue">купить билет</a>
+    <h4>95 лет на службе отечеству</h4><img src="/layout/images/title.enter.png" alt="">
+    <a href="/gallery/" class="button">о выставке</a>
+    <a href="/buy/" class="button button--blue">купить билет</a>
   </div>
 </header>
 <div class="page">
@@ -39,10 +41,10 @@ $APPLICATION->SetPageProperty('body_class', "index");
         </div>
       </div>
     </div>
-    
+
     <div class="center">
         <a href="#years" class="button button--blue">выбрать другой период</a>
-        <a href="/contacts/" class="button">посетить выставку</a>
+        <a href="/buy/" class="button">посетить выставку</a>
     </div>
     <div class="center">
       <div class="divider"></div>
@@ -63,7 +65,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
 
       </div>
     </div>
-    <div class="center"><a href="/contacts/" class="button">посетить выставку</a></div>
+    <div class="center"><a href="/buy/" class="button">посетить выставку</a></div>
   </div>
 </div>
 <?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');?>

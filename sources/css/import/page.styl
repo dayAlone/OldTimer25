@@ -198,11 +198,14 @@
     text-align center
     color white
     letter-spacing 4px
+    t all
     & + .button
         margin-left 20px
     &:hover, &:focus
         color white
         background-color alpha(red, .8)
+        transform translateY(-5px)
+        box-shadow 3px 4px 0 0 alpha(white, .2)
     &--blue
         background-color blue2
         & + .button
