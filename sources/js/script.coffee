@@ -61,7 +61,7 @@ $(document).ready ->
 			setSliderActive id
 	slider.noUiSlider
 		.on 'change', (e)->
-			console.log 'load'
+			$.load '/get.php?id=' + $(".years__item").filter("[data-value=#{id}]").data 'id'
 
 	$('a[href="#years"]').on 'click', (e)->
 		$('html, body').stop().animate { scrollTop: $('h2').offset().top - 50 }, '500', 'swing'
