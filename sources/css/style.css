@@ -1206,7 +1206,7 @@ svg g {
 .text .content div {
   float: none !important;
 }
-.text .content div > .span12 > div {
+.text .content > .span12 > div {
   margin-bottom: 20px;
   font-size: 15px;
 }
