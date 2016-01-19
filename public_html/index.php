@@ -37,8 +37,21 @@ $APPLICATION->SetPageProperty('body_class', "index");
       <h2>Кремлёвская коллекция<span>5 дней в Сокольниках</span></h2>
     </div>
     <div class="steps"></div>
-    <div class="years"><a href="#" data-value="0" style="z-index: 8" class="years__item ">1916</a><a href="#" data-value="1" style="z-index: 7" class="years__item ">1924</a><a href="#" data-value="2" style="z-index: 6" class="years__item ">1953</a><a href="#" data-value="3" style="z-index: 5" class="years__item years__item--active">1964</a><a href="#" data-value="4" style="z-index: 4" class="years__item ">1983</a><a href="#" data-value="5" style="z-index: 3" class="years__item ">1991</a><a href="#" data-value="6" style="z-index: 2" class="years__item ">1999</a><a href="#" data-value="7" style="z-index: 1" class="years__item ">2016</a>
-    </div>
+    <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list","years",
+        Array(
+                "IBLOCK_TYPE"         => 'content',
+                "IBLOCK_ID"           => 44,
+                "SECTION_CODE"        => "years",
+                "TOP_DEPTH"           => "2",
+                "SECTION_FIELDS"      => "",
+                "ADD_SECTIONS_CHAIN"  => "Y",
+                "CACHE_TYPE"          => "A",
+                "CACHE_TIME"          => "36000000",
+                "CACHE_NOTES"         => "",
+                "CACHE_GROUPS"        => "Y"
+            )
+        );
+    ?>
     <div class="row year">
       <div class="col-xs-7">
         <div class="year__title">1964-1983</div>
