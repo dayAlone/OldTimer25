@@ -52,19 +52,23 @@ $APPLICATION->SetPageProperty('body_class', "index");
             )
         );
     ?>
-    <div class="row year">
-      <div class="col-xs-7">
-        <div class="year__title">1964-1983</div>
-        <div class="year__divider divider divider--blue"></div>
-        <p class="year__description">Гараж особого назначения (ГОН) — структурное подразделение Федеральной службы охраны России. Согласно закону «О государственной охране», сотрудники ГОНа обеспечивают безопасное передвижение президента России, премьер- министра, глав обеих палат парламента, а также лидеров всех зарубежных государств, находящихся в России с визитами. Гараж особого назначения был создан решением Совета народных комиссаров от 5 января 1921 года. Возглавил гараж личный водитель Ленина Степан Гиль. В 1922 году его на этом посту сменил личный водитель Сталина Павел Удалов, который возглавлял гараж до 1953 года.</p>
-      </div>
-      <div class="col-xs-5">
-        <div class="year__image-frame">
-          <div style="background-image: url(/layout/images/slider.jpg)" href="#" class="year__image"></div>
-        </div>
-      </div>
-    </div>
-
+    
+    <?php
+        $APPLICATION->IncludeComponent("bitrix:news.list", "year",
+        array(
+            "IBLOCK_ID"           => 44,
+            "NEWS_COUNT"          => "99999",
+            "SORT_BY1"            => "SECTION_ID",
+            "SORT_ORDER1"         => "ASC",
+            "PROPERTY_CODE"       => array('LINK'),
+            "PARENT_SECTION_CODE" => '1964',
+            "CACHE_TYPE"          => "A",
+            "DISPLAY_PANEL"       => "N",
+            "SET_TITLE"           => "N"
+           ),
+           false
+        );
+    ?>
     <div class="center">
         <a href="#years" class="button button--blue">выбрать другой период</a>
         <a href="/buy/" class="button">посетить выставку</a>
