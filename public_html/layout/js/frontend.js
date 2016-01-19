@@ -18359,6 +18359,16 @@ function closure ( target, options ){
 
   $(document).ready(function() {
     var getData, setSliderActive, slider;
+    $('#Modal').on('show.bs.modal', function(e) {
+      var url;
+      url = $(e.relatedTarget).data('url');
+      if ($('#Modal').data('url') !== url) {
+        $('#Modal').data('url', url).find('.text').html('').spin(spinOptions);
+        return $.get(url, function(data) {
+          return $('#Modal .text').html($(data).find('.main .articles .item').html()).find('span.date, div.meta').remove();
+        });
+      }
+    }).find('.text').spin(spinOptions);
     $('.nav-tabs a').on('click', function(e) {
       console.log(123);
       $(this).tab('show');

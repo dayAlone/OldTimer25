@@ -33,6 +33,17 @@ calculateLayout = ->
 
 $(document).ready ->
 
+	$('#Modal').on('show.bs.modal', (e)->
+		url = $(e.relatedTarget).data 'url'
+		if $('#Modal').data('url') != url
+			$('#Modal').data('url', url)
+				.find('.text').html('').spin spinOptions
+			$.get url, (data)->
+				$('#Modal .text')
+					.html $(data).find('.main .articles .item').html()
+					.find('span.date, div.meta').remove()
+	).find('.text').spin spinOptions
+
 	$('.nav-tabs a').on 'click', (e)->
 		console.log 123
 		$(this).tab('show')
