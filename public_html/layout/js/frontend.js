@@ -18386,12 +18386,12 @@ function closure ( target, options ){
       id = parseInt(e[0]);
       return setSliderActive(id);
     });
-    slider.noUiSlider.on('change', function(e) {
+    slider.noUiSlider.on('change set', function(e) {
       var id;
       id = parseInt(e[0]);
-      return $.get('/get.php?id=' + $(".years__item").filter("[data-value=" + id + "]").data('id', data(function() {
+      return $.get('/get.php?id=' + $(".years__item").filter("[data-value=" + id + "]").data('id', function(data) {
         return $('.year').html($(data).html());
-      })));
+      }));
     });
     $('a[href="#years"]').on('click', function(e) {
       $('html, body').stop().animate({

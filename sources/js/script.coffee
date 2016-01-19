@@ -60,9 +60,9 @@ $(document).ready ->
 			id = parseInt e[0]
 			setSliderActive id
 	slider.noUiSlider
-		.on 'change', (e)->
+		.on 'change set', (e)->
 			id = parseInt e[0]
-			$.get '/get.php?id=' + $(".years__item").filter("[data-value=#{id}]").data 'id', data ->
+			$.get '/get.php?id=' + $(".years__item").filter("[data-value=#{id}]").data 'id', (data) ->
 				$('.year').html $(data).html()
 
 	$('a[href="#years"]').on 'click', (e)->
