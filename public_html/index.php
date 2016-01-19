@@ -59,26 +59,11 @@ $APPLICATION->SetPageProperty('body_class', "index");
     <div class="center">
       <div class="divider"></div>
     </div>
-    <?php
-        $APPLICATION->IncludeComponent("bitrix:news.list", "tabs",
-        array(
-            "IBLOCK_ID"           => 44,
-            "NEWS_COUNT"          => "99999",
-            "SORT_BY1"            => "SECTION_ID",
-            "SORT_ORDER1"         => "ASC",
-            "PROPERTY_CODE"       => array('LINK'),
-            "CACHE_TYPE"          => "A",
-            "DISPLAY_PANEL"       => "N",
-            "PARENT_SECTION_CODE" => "tabs",
-            "SET_TITLE"           => "N"
-           ),
-           false
-        );
-    ?>
+
     <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list","tabs",
         Array(
-                "IBLOCK_TYPE"         => "",
-                "IBLOCK_ID"           => "",
+                "IBLOCK_TYPE"         => "content",
+                "IBLOCK_ID"           => 44,
                 "SECTION_CODE"        => "tabs",
                 "TOP_DEPTH"           => "2",
                 "SECTION_FIELDS"      => "",
