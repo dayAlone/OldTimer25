@@ -5,7 +5,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
 <header class="header">
   <div class="container">
     <h4>95 лет на службе отечеству</h4><img src="/layout/images/title.enter.png" alt="">
-    <a href="/gallery/" class="button">о выставке</a>
+    <a href="#years" class="button">о выставке</a>
     <a href="/buy/" class="button button--blue">купить билет</a>
   </div>
 </header>
@@ -26,7 +26,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
           "PROPERTY_CODE" => array("IMAGES")
         ));
     ?>
-    
+
     <p class="center">
       Коллекцию автомобилей первых лиц государства показывают крайне редко. <br/>
       Не упустите свой шанс увидеть её. Уникальная выставка в Сокольниках <br/>
