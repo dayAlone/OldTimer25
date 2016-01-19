@@ -16,7 +16,7 @@
                   "SORT_BY1"            => "SECTION_ID",
                   "SORT_ORDER1"         => "ASC",
                   "PROPERTY_CODE"       => array('LINK'),
-                  "SECTION_ID"          => $value['ID']
+                  "SECTION_ID"          => $value['ID'],
                   "CACHE_TYPE"          => "A",
                   "DISPLAY_PANEL"       => "N",
                   "PARENT_SECTION_CODE" => "tabs",
