@@ -4090,6 +4090,38 @@ svg g {
 .scroll-fix--on {
   pointer-events: initial;
 }
+.text {
+  font-size: 15px;
+  margin-top: 0px;
+}
+@media (min-width: 1420px) {
+  .text {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+}
+.text .content div {
+  float: none !important;
+}
+.text h4 {
+  font-family: 'FuturaOld', 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  margin-top: 0px;
+}
+.text h4.place {
+  margin-top: 0px;
+}
+.text a {
+  color: #fff;
+  text-decoration: underline;
+}
+.text a:hover {
+  color: #d2091d;
+}
 .header {
   float: left;
   width: 100%;
