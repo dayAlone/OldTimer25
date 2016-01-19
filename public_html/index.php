@@ -62,7 +62,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
 
     <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list","tabs",
         Array(
-                "IBLOCK_TYPE"         => "content",
+                "IBLOCK_TYPE"         => 'content',
                 "IBLOCK_ID"           => 44,
                 "SECTION_CODE"        => "tabs",
                 "TOP_DEPTH"           => "2",
