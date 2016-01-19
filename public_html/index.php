@@ -36,7 +36,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
     <div class="center">
       <h2>Кремлёвская коллекция<span>5 дней в Сокольниках</span></h2>
     </div>
-    <div class="steps"></div>
+    
     <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list","years",
         Array(
                 "IBLOCK_TYPE"         => 'content',
