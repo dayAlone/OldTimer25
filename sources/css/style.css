@@ -1470,7 +1470,7 @@ svg g {
   margin-bottom: 20px;
   display: block;
 }
-.page .preview__image:hover + .preview__title {
+.page .preview__image:hover + a.preview__title {
   color: #d2091d;
 }
 .page .preview__text {
@@ -1485,7 +1485,7 @@ svg g {
   margin-bottom: 20px;
   display: block;
 }
-.page .preview__title:hover {
+.page .preview a.preview__title:hover {
   color: #d2091d;
 }
 .page iframe + p a {
