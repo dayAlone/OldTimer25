@@ -1560,7 +1560,6 @@ svg g {
 .button:hover,
 .button:focus {
   color: #fff;
-  background-color: rgba(210,9,29,0.8);
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -o-transform: translateY(-5px);
@@ -1575,14 +1574,8 @@ svg g {
 .button--blue + .button {
   margin-left: 40px;
 }
-.button--blue:hover {
-  background-color: rgba(0,67,140,0.8);
-}
 .button--orange {
   background-color: #ff9218;
-}
-.button--orange:hover {
-  background-color: rgba(255,146,24,0.8);
 }
 .articles .article {
   margin-top: 50px;
