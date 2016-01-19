@@ -1,0 +1,11 @@
+toolbar.toolbar
+    .container
+        nav.nav.row
+            .col-xs-1
+                a.nav__item(href='http://oldtimer.ru') oldtimer.ru
+            
+            .col-xs-11.right
+                - var nav = [{ text: 'олдтаймер-галерея', url: '/gallery.html'}, { text: 'гараж особого назначения', url: '/index.html'}, { text: '12 причин посетить', url: '/reasons.html'}, { text: 'ПРОЕЗД / РАСПИСАНИЕ / БИЛЕТЫ', url: '/contacts.html'}, { text: 'билет он-лайн', url: '/buy.html'}]
+                each el, key in nav
+                    - var c = activeItem == key ? "nav__item--active" : ""
+                    a(href="#{el.url}", class="nav__item #{c}")= el.text

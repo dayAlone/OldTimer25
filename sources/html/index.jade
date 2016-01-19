@@ -1,0 +1,119 @@
+include includes/header
+<body class='index'>
+- var activeItem = 1
+include includes/toolbar
+header.header
+	.container
+		h4 95 лет на службе отечеству
+		img(src='/layout/images/title.enter.png', alt='')
+		a.button(href='#') о выставке
+		a.button.button--blue(href='#') купить билет
+.page
+	.container
+		h3.center
+			span 95 
+			| главных машин страны. 
+			span 95 
+			| удивительных историй.
+			| <br/>
+			span 95 
+			| лет Гаражу Особого Назначения.
+		.slider
+			a.slider__arrow.slider__arrow--prev(href='#', data-direction='<')
+				img(src='/layout/images/svg/left.svg', alt='')
+			a.slider__arrow.slider__arrow--next(href='#', data-direction='>')
+				img(src='/layout/images/svg/right.svg', alt='')
+			.fotorama.slider__fotorama(data-width='100%', data-autoplay='true', data-nav='false', data-loop='true', data-transition-duration='1000', data-shadow='false')
+				img(src="/layout/images/slider.jpg", alt="")
+				img(src="/layout/images/slider.jpg", alt="")
+				img(src="/layout/images/slider.jpg", alt="")
+		p.center.
+			Коллекцию автомобилей первых лиц государства показывают крайне редко. <br/>
+			Не упустите свой шанс увидеть её. Уникальная выставка в Сокольниках <br/>
+			продлится лишь пять дней - с 4 по 8 марта.
+		.center
+			a.button(href='#') увидеть своими глазами
+		.center
+			h2 Кремлёвская коллекция
+				span 5 дней в Сокольниках
+		.steps
+		.years
+			- var years = [1916, 1924, 1953, 1964, 1983, 1991, 1999, 2016]
+			each el, key in years
+				- var c = key === 3 ? "years__item--active" : ""
+				a(href="#", data-value="#{key}", class="years__item #{c}", style="z-index: #{years.length - key}")= el
+		.row.year
+			.col-xs-7
+				.year__title 1964-1983
+				.year__divider.divider.divider--blue
+				p.year__description.
+					Гараж особого назначения (ГОН) — структурное подразделение Федеральной службы охраны России. Согласно закону «О государственной охране», сотрудники ГОНа обеспечивают безопасное передвижение президента России, премьер- министра, глав обеих палат парламента, а также лидеров всех зарубежных государств, находящихся в России с визитами. Гараж особого назначения был создан решением Совета народных комиссаров от 5 января 1921 года. Возглавил гараж личный водитель Ленина Степан Гиль. В 1922 году его на этом посту сменил личный водитель Сталина Павел Удалов, который возглавлял гараж до 1953 года.
+			.col-xs-5
+				.year__image-frame
+					.year__image(style='background-image: url(/layout/images/slider.jpg)', href='#')
+		.row
+			- var n = 0
+			while n < 3
+				.col-xs-4
+					.preview
+						a.preview__image(style='background-image: url(/layout/images/car.jpg)', href='#')
+							
+						a(href='#').preview__title
+							| Название автомобиля в две строки (1985)
+						p.preview__text.
+							1942 году перед работниками столичного автозавода, эвакуированного на Урал, была поставлена задача создать новое поколение представительского лимузина. Об автомобиле ЗИС-110 рассказывает материал «Герои Советского Союза. 
+				- n++
+		.center
+			a.button.button--blue(href='#years') выбрать другой период
+			a.button(href='#') посетить выставку
+		.center
+			.divider
+
+		ul.nav-tabs
+			li.active(role="presentation")
+				a(href="#t-1", aria-controls="t-1", role="tab", data-toggle="tab") Автомобили выездной охраны
+			li(role="presentation")
+				a(href="#t-2", aria-controls="t-2", role="tab", data-toggle="tab") Aвтобусы
+			li(role="presentation")
+				a(href="#t-3", aria-controls="t-3", role="tab", data-toggle="tab") Мотоциклы почётного эскорта
+			
+		.tab-content
+			#t-1.tab-pane.fade.in.active(role="tabpanel")
+				.row
+					- var n = 0
+					while n < 3
+						.col-xs-4
+							.preview
+								a.preview__image(style='background-image: url(/layout/images/car.jpg)', href='#')
+								a(href='#').preview__title
+									| Название автомобиля в две строки
+								p.preview__text.
+									1942 году перед работниками столичного автозавода, эвакуированного на Урал, была поставлена задача создать новое поколение представительского лимузина. Об автомобиле ЗИС-110 рассказывает материал «Герои Советского Союза. 
+						- n++
+				
+			#t-2.tab-pane(role="tabpanel")
+				.row
+					- var n = 0
+					while n < 3
+						.col-xs-4
+							.preview
+								a.preview__image(style='background-image: url(/layout/images/car.jpg)', href='#')
+								a(href='#').preview__title
+									| Название автомобиля в две строки (123)
+								p.preview__text.
+									1942 году перед работниками столичного автозавода, эвакуированного на Урал, была поставлена задача создать новое поколение представительского лимузина. Об автомобиле ЗИС-110 рассказывает материал «Герои Советского Союза. 
+						- n++
+			#t-3.tab-pane(role="tabpanel")
+				.row
+					- var n = 0
+					while n < 3
+						.col-xs-4
+							.preview
+								a.preview__image(style='background-image: url(/layout/images/car.jpg)', href='#')
+								a(href='#').preview__title
+									| Название автомобиля в две строки (312)
+								p.preview__text.
+									1942 году перед работниками столичного автозавода, эвакуированного на Урал, была поставлена задача создать новое поколение представительского лимузина. Об автомобиле ЗИС-110 рассказывает материал «Герои Советского Союза. 
+						- n++
+		.center
+			a.button(href='#') посетить выставку

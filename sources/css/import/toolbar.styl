@@ -1,0 +1,29 @@
+.toolbar
+    height 62px
+    line-height 65px
+    display block
+    &:after
+        content ""
+        position absolute
+        top 0
+        left 0
+        height 100%
+        width 100%
+        background url(/layout/images/menu.bg.png) repeat-x top left
+        opacity .5
+        .index &
+            opacity 1
+    .nav
+        position relative
+        z-index 2
+        font-family 'BebasNeue'
+        text-transform uppercase
+        &__item
+            middle()
+            color #ecedf1
+            font-size 18px
+            margin-left 22px
+            &:hover, &--active
+                color red
+            &:first-of-type
+                margin-left 0

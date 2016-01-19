@@ -1,0 +1,38 @@
+<?
+$aMenuLinks = Array(
+    Array(
+        "олдтаймер-галерея",
+        "/gallery/",
+        array(),
+        array(),
+        ""
+    ),
+    Array(
+        "гараж особого назначения",
+        "/",
+        array(),
+        array(),
+        ""
+    ),
+    Array(
+        "12 причин посетить",
+        "/reasons/",
+        array(),
+        array(),
+        ""
+    ),
+    Array(
+        "ПРОЕЗД / РАСПИСАНИЕ / БИЛЕТЫ",
+        "/contacts/",
+        array(),
+        array(),
+        ""
+    ),
+    Array(
+        "билет он-лайн",
+        "/buy/",
+        array(),
+        array(),
+        ""
+    ));
+?>

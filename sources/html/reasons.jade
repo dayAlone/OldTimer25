@@ -1,0 +1,22 @@
+include includes/header
+<body class='reasons'>
+- var activeItem = 2
+include includes/toolbar
+.header
+	.container
+		img(src='/layout/images/title.reasons.png', alt='')
+.page
+	.container
+		.row
+			- var n = 0
+			while n < 6
+				.col-xs-4
+					.preview
+						a.preview__image(style='background-image: url(/layout/images/car.jpg)', href='#')
+						a(href='#').preview__title
+							| Название автомобиля в две строки
+						p.preview__text.
+							1942 году перед работниками столичного автозавода, эвакуированного на Урал, была поставлена задача создать новое поколение представительского лимузина. Об автомобиле ЗИС-110 рассказывает материал «Герои Советского Союза. 
+				- n++		
+		.center
+			a.button(href='#') купить билет онлайн
