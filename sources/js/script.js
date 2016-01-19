@@ -67,7 +67,7 @@
       return setSliderActive(id);
     });
     slider.noUiSlider.on('change', function(e) {
-      return $.load('/get.php?id=' + $(".years__item").filter("[data-value=" + id + "]").data('id'));
+      return $('.year').load('/get.php?id=' + $(".years__item").filter("[data-value=" + id + "]").data('id'));
     });
     $('a[href="#years"]').on('click', function(e) {
       $('html, body').stop().animate({
