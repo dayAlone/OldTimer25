@@ -29,7 +29,7 @@ $aMenuLinks = Array(
         ""
     ),
     Array(
-        "билет он-лайн",
+        "билет онлайн",
         "/buy/",
         array(),
         array(),
