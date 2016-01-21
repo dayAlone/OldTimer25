@@ -13,7 +13,7 @@ $APPLICATION->SetTitle('Проезд / расписание / билеты');
         <h4>Билеты</h4>
         <p>
 
-          Билет <a href="/buy/">online </a>– 500 рублей <br/>
+          Билет <a href="/buy/">онлайн </a>– 500 рублей <br/>
           Билет в кассе – 700 рублей <br/>
           Семейный билет - 2000 рублей <br/><a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a>
         </p>
