@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetPageProperty('body_class', "buy");
+$APPLICATION->SetPageProperty('body_class', "gallery");
 $APPLICATION->SetTitle('Олдтаймер-галерея');
 $srt = urlencode("Билет на Олдтаймер-Гаререю и экспозицию ГОН");
 ?>
