@@ -30,7 +30,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
             "SORT_BY1"            => "SORT",
             "SORT_ORDER1"         => "ASC",
             "PROPERTY_CODE"       => array('LINK'),
-            "PARENT_SECTION"      => 'gallery',
+            "PARENT_SECTION"      => 'best',
             "CACHE_TYPE"          => "A",
             "DISPLAY_PANEL"       => "N",
             "SET_TITLE"           => "N"
@@ -51,7 +51,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
               "SORT_BY1"            => "SORT",
               "SORT_ORDER1"         => "ASC",
               "PROPERTY_CODE"       => array('ABOUT'),
-              "PARENT_SECTION"      => 'gallery',
+
               "CACHE_TYPE"          => "A",
               "DISPLAY_PANEL"       => "N",
               "SET_TITLE"           => "N"
@@ -62,7 +62,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
       <img src="/layout/images/divider.png" alt="">
     </div>
 
-    <div class="center m-margin-top"><a href="/buy/" class="button button--orange xxl-margin-bottom">ПОСЕТИТЬ ВЫСТАВКУ</a><br>
+    <div class="center xl-margin-top"><a href="/buy/" class="button button--orange xxl-margin-bottom">ПОСЕТИТЬ ВЫСТАВКУ</a><br>
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
       <h2 class="no-margin-top xs-margin-bottom">15 лет успеха</h2>
     </div>
