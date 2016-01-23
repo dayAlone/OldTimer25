@@ -25,7 +25,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     <?php
         $APPLICATION->IncludeComponent("bitrix:news.list", "articles",
         array(
-            "IBLOCK_ID"           => 44,
+            "IBLOCK_ID"           => 40,
             "NEWS_COUNT"          => "99999",
             "SORT_BY1"            => "SORT",
             "SORT_ORDER1"         => "ASC",
