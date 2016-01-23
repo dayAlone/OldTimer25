@@ -54,41 +54,56 @@
       $(this).tab('show');
       return e.preventDefault();
     });
+    $('.slider--quotes').on('fotorama:show', function(e, fotorama) {
+      $(".authors__item").mod('active', false);
+      return $(".authors__item:nth-child(" + (fotorama.activeIndex + 1) + ")").addClass('authors__item--active');
+    });
+    $(".authors__item").on('click', function(e) {
+      $('.slider--quotes .fotorama').data('fotorama').show($(this).index());
+      return e.preventDefault();
+    });
+    $('.form').on('submit', function(e) {
+      $(this).mod('success', true);
+      $.post('/form.php', $(this).serialize());
+      return e.preventDefault();
+    });
     slider = document.getElementsByClassName('steps')[0];
-    noUiSlider.create(slider, {
-      start: [3, 4],
-      limit: 1,
-      behaviour: 'drag',
-      connect: true,
-      margin: 1,
-      step: 1,
-      range: {
-        min: 0,
-        max: 7
-      }
-    });
-    setSliderActive = function(id) {
-      $(".years__item").mod('active', false);
-      return $(".years__item").filter("[data-value=" + id + "]").mod('active', true);
-    };
-    getData = function(id) {
-      var value;
-      value = $(".years__item").filter("[data-value=" + id + "]").data('id');
-      if (value !== $('.year').data('id')) {
-        $('.year').data('id', value);
-        return $.get('/get.php?id=' + value, function(data) {
-          return $('.year').html($(data).html());
-        });
-      }
-    };
-    slider.noUiSlider.on('slide', function(e) {
-      var id;
-      id = parseInt(e[0]);
-      return setSliderActive(id);
-    });
-    slider.noUiSlider.on('set', function(e) {
-      return getData(parseInt(e[0]));
-    });
+    if ($(slider).length > 0) {
+      noUiSlider.create(slider, {
+        start: [3, 4],
+        limit: 1,
+        behaviour: 'drag',
+        connect: true,
+        margin: 1,
+        step: 1,
+        range: {
+          min: 0,
+          max: 7
+        }
+      });
+      setSliderActive = function(id) {
+        $(".years__item").mod('active', false);
+        return $(".years__item").filter("[data-value=" + id + "]").mod('active', true);
+      };
+      getData = function(id) {
+        var value;
+        value = $(".years__item").filter("[data-value=" + id + "]").data('id');
+        if (value !== $('.year').data('id')) {
+          $('.year').data('id', value);
+          return $.get('/get.php?id=' + value, function(data) {
+            return $('.year').html($(data).html());
+          });
+        }
+      };
+      slider.noUiSlider.on('slide', function(e) {
+        var id;
+        id = parseInt(e[0]);
+        return setSliderActive(id);
+      });
+      slider.noUiSlider.on('set', function(e) {
+        return getData(parseInt(e[0]));
+      });
+    }
     $('a[href="#years"]').on('click', function(e) {
       $('html, body').stop().animate({
         scrollTop: $('h2').offset().top - 50
@@ -112,7 +127,12 @@
       return e.preventDefault();
     });
     $('.slider').elem('arrow').on('click', function(e) {
-      $(this).block().elem('fotorama').data('fotorama').show($(this).data('direction'));
+      var fotorama;
+      fotorama = $(this).block().elem('fotorama').data('fotorama');
+      console.log(fotorama);
+      if (fotorama) {
+        fotorama.show($(this).data('direction'));
+      }
       return e.preventDefault();
     });
     return delay(300, function() {

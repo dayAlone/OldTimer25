@@ -49,37 +49,50 @@ $(document).ready ->
 		$(this).tab('show')
 		e.preventDefault()
 
+	$('.slider--quotes').on 'fotorama:show', (e, fotorama)->
+		$(".authors__item").mod 'active', false
+		$(".authors__item:nth-child(#{fotorama.activeIndex + 1})").addClass 'authors__item--active'
+
+	$(".authors__item").on 'click', (e)->
+		$('.slider--quotes .fotorama').data('fotorama').show $(this).index()
+		e.preventDefault()
+
+	$('.form').on 'submit', (e)->
+		$(this).mod 'success', true
+		$.post '/form.php', $(this).serialize()
+		e.preventDefault()
+
 	slider = document.getElementsByClassName('steps')[0]
+	if $(slider).length > 0
+		noUiSlider.create slider, {
+			start: [ 3, 4 ]
+			limit: 1
+			behaviour: 'drag'
+			connect: true
+			margin: 1
+			step: 1
+			range:
+				min: 0
+				max: 7
+		}
+		setSliderActive = (id)->
+			$(".years__item").mod 'active', false
+			$(".years__item").filter("[data-value=#{id}]").mod 'active', true
 
-	noUiSlider.create slider, {
-		start: [ 3, 4 ]
-		limit: 1
-		behaviour: 'drag'
-		connect: true
-		margin: 1
-		step: 1
-		range:
-			min: 0
-			max: 7
-	}
-	setSliderActive = (id)->
-		$(".years__item").mod 'active', false
-		$(".years__item").filter("[data-value=#{id}]").mod 'active', true
+		getData = (id)->
+			value = $(".years__item").filter("[data-value=#{id}]").data 'id'
+			if value != $('.year').data 'id'
+				$('.year').data 'id', value
+				$.get '/get.php?id=' + value, (data) ->
+					$('.year').html $(data).html()
 
-	getData = (id)->
-		value = $(".years__item").filter("[data-value=#{id}]").data 'id'
-		if value != $('.year').data 'id'
-			$('.year').data 'id', value
-			$.get '/get.php?id=' + value, (data) ->
-				$('.year').html $(data).html()
-
-	slider.noUiSlider
-		.on 'slide', (e)->
-			id = parseInt e[0]
-			setSliderActive id
-	slider.noUiSlider
-		.on 'set', (e)->
-			getData parseInt e[0]
+		slider.noUiSlider
+			.on 'slide', (e)->
+				id = parseInt e[0]
+				setSliderActive id
+		slider.noUiSlider
+			.on 'set', (e)->
+				getData parseInt e[0]
 
 
 	$('a[href="#years"]').on 'click', (e)->
@@ -98,7 +111,10 @@ $(document).ready ->
 		e.preventDefault()
 
 	$('.slider').elem('arrow').on 'click', (e)->
-		$(this).block().elem('fotorama').data('fotorama').show $(this).data 'direction'
+		fotorama = $(this).block().elem('fotorama').data('fotorama')
+		console.log fotorama
+		if fotorama
+			fotorama.show $(this).data 'direction'
 		e.preventDefault()
 
 	delay 300, ->
