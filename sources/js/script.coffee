@@ -79,6 +79,8 @@ $(document).ready ->
 			$(".years__item").mod 'active', false
 			$(".years__item").filter("[data-value=#{id}]").mod 'active', true
 
+		$('.year').css 'minHeight', $('.year').height()
+
 		getData = (id)->
 			value = $(".years__item").filter("[data-value=#{id}]").data 'id'
 			if value != $('.year').data 'id'
@@ -87,6 +89,10 @@ $(document).ready ->
 				$('.year').one end, ->
 					$.get '/get.php?id=' + value, (data) ->
 						$('.year').html $(data).html()
+						h = 0
+						$('.year').find('.row').each (key, el) ->
+							h += $(el).height()
+						$('.year').css 'minHeight', h
 						$('.year').mod 'disable', false
 
 		slider.noUiSlider

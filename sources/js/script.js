@@ -85,6 +85,7 @@
         $(".years__item").mod('active', false);
         return $(".years__item").filter("[data-value=" + id + "]").mod('active', true);
       };
+      $('.year').css('minHeight', $('.year').height());
       getData = function(id) {
         var value;
         value = $(".years__item").filter("[data-value=" + id + "]").data('id');
@@ -93,7 +94,13 @@
           $('.year').mod('disable', true);
           return $('.year').one(end, function() {
             return $.get('/get.php?id=' + value, function(data) {
+              var h;
               $('.year').html($(data).html());
+              h = 0;
+              $('.year').find('.row').each(function(key, el) {
+                return h += $(el).height();
+              });
+              $('.year').css('minHeight', h);
               return $('.year').mod('disable', false);
             });
           });
