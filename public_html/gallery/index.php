@@ -189,7 +189,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     </div>
     <?
         $APPLICATION->IncludeComponent("bitrix:news.detail", "gallery", Array(
-          "IBLOCK_ID"     => 43,
+          "IBLOCK_ID"     => 42,
           "ELEMENT_CODE"  => 'gallery',
           "CHECK_DATES"   => "N",
           "IBLOCK_TYPE"   => "25",
