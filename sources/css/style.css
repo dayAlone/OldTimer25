@@ -1633,6 +1633,23 @@ svg g {
   padding: 0 100px;
   line-height: 1;
 }
+.page .year {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.page .year--disable {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
 .page .year .row {
   margin-top: 40px;
 }

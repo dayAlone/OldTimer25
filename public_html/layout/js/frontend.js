@@ -20641,8 +20641,12 @@ if ('undefined' !== typeof window.ParsleyValidator)
         value = $(".years__item").filter("[data-value=" + id + "]").data('id');
         if (value !== $('.year').data('id')) {
           $('.year').data('id', value);
-          return $.get('/get.php?id=' + value, function(data) {
-            return $('.year').html($(data).html());
+          $('.year').mod('disable', true);
+          return $('.year').one(end, function() {
+            return $.get('/get.php?id=' + value, function(data) {
+              $('.year').html($(data).html());
+              return $('.year').mod('disable', false);
+            });
           });
         }
       };

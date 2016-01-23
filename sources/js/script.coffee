@@ -83,8 +83,11 @@ $(document).ready ->
 			value = $(".years__item").filter("[data-value=#{id}]").data 'id'
 			if value != $('.year').data 'id'
 				$('.year').data 'id', value
-				$.get '/get.php?id=' + value, (data) ->
-					$('.year').html $(data).html()
+				$('.year').mod 'disable', true
+				$('.year').one end, ->
+					$.get '/get.php?id=' + value, (data) ->
+						$('.year').html $(data).html()
+						$('.year').mod 'disable', false
 
 		slider.noUiSlider
 			.on 'slide', (e)->
