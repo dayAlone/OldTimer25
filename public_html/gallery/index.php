@@ -5,7 +5,8 @@ $APPLICATION->SetTitle('Олдтаймер-галерея');
 $srt = urlencode("Билет на Олдтаймер-Гаререю и экспозицию ГОН");
 ?>
 <div class="header">
-  <div class="container"><img src="/layout/images/title.gallery.png" alt=""><br><a href="#" class="button button--orange">о выставке</a><a href="#" class="button button--brown">купить билет</a></div>
+  <div class="container"><img src="/layout/images/title.gallery.png" alt=""><br>
+      <a href="#page" class="button button--orange">о выставке</a><a href="/buy/" class="button button--brown">купить билет</a></div>
 </div>
 <div class="page">
   <div class="container">
