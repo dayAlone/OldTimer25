@@ -17,6 +17,6 @@
 </div>
 <div class="authors">
     <?foreach ($arResult['ITEMS'] as $key=>$item):?>
-        <a href="#" class="authors__item authors__item--active"><?=str_replace(" ", "<br>", $item['NAME'])?></a>
+        <a href="#" class="authors__item <?=($key == 0 ? "authors__item--active":"")?>"><?=str_replace(" ", "<br>", $item['NAME'])?></a>
     <?endforeach;?>
 </div>
