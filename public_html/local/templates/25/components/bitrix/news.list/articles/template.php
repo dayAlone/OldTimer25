@@ -16,7 +16,7 @@
         </div>
     </div>
     <? if($key % 3 == 0 && $key != 0):?>
-    <div class="col-sm-12 visible-sm visible-md"></div>
+    <div class="col-xs-12"></div>
     <?endif;?>
 <?endforeach?>
 </div>
