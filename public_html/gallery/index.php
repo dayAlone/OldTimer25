@@ -123,7 +123,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
           <div class="form__message">Поздравляем! <br/>Вы успешно зарегистрировались на конференцию.</div>
           <input type="text" name="number" placeholder="Кол-во мест" required>
           <input type="email" name="email" placeholder="Ваш e-mail" required>
-          <input type="submit" placeholder="Регистрация" required>
+          <input type="submit" value="Регистрация" required>
         </form>
       </div>
     </div>
