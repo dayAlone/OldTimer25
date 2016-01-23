@@ -5,10 +5,10 @@
         <div class="slider__item">
           <div class="quote">
             <div class="quote__content">
-              <div style="background-image: url(/layout/images/slider.jpg)" class="quote__avatar"></div>
+              <div style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)" class="quote__avatar"></div>
               <div class="quote__name"><?=$item['NAME']?></div>
               <div class="quote__info"><?=$item['PROPERTIES']['ABOUT']['VALUE']?></div>
-              <div class="quote__text">«<?=$item['PREVIEW_TEXT']?>»</div>
+              <div class="quote__text"><?=$item['PREVIEW_TEXT']?></div>
             </div>
           </div>
         </div>

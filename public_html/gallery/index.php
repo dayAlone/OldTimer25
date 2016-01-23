@@ -41,7 +41,8 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     <div class="center m-margin-top">
       <a href="/buy/" class="button button--orange xxl-margin-bottom">КУПИТЬ БИЛЕТ ОНЛАЙН</a><br>
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
-      <h2 class="no-margin-top xxl-margin-bottom">Звёзды говорят</h2><img src="/layout/images/divider.png" alt="">
+      <h2 class="no-margin-top xxl-margin-bottom">Звёзды говорят</h2>
+      <img src="/layout/images/divider.png" alt="">
       <?php
           $APPLICATION->IncludeComponent("bitrix:news.list", "quotes",
           array(
@@ -58,7 +59,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
              false
           );
       ?>
-      
+      <img src="/layout/images/divider.png" alt="">
     </div>
 
     <div class="center m-margin-top"><a href="/buy/" class="button button--orange xxl-margin-bottom">ПОСЕТИТЬ ВЫСТАВКУ</a><br>
