@@ -163,16 +163,16 @@
             padding-right 0
             .fotorama
                 box-shadow none
-                background #9c2223 url(/layout/images/slider.png) center center
+                background transparent url(/layout/images/slider.png) center center
+                background-size cover
             .slider
                 &__arrow
                     margin-top -3px
                     img
                         max-width 15px
-        &__item
-            height 450px
-
-            background-size cover
+                &__item
+                    height 450px
+                    background-size cover
     img[src='/layout/images/divider.png']
         max-width 100%
     .authors

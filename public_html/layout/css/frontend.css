@@ -4423,7 +4423,10 @@ svg g {
 .page .slider--quotes .fotorama {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #9c2223 url("/layout/images/slider.png") center center;
+  background: transparent url("/layout/images/slider.png") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .page .slider--quotes .slider__arrow {
   margin-top: -3px;
@@ -4431,7 +4434,7 @@ svg g {
 .page .slider--quotes .slider__arrow img {
   max-width: 15px;
 }
-.page .slider__item {
+.page .slider--quotes .slider__item {
   height: 450px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
