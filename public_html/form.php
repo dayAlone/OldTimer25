@@ -35,7 +35,7 @@ ____________________________________________________________<br />
 $subject = "Регистрация на конференцию | www.oldtimer.ru";
 $subject = '=?UTF-8?B?'.base64_encode($subject).'?=';
 
-foreach (array('ak@radia.ru') as $email) {
+foreach (array('dp@radia.ru') as $email) {
 	mail($email, $subject, $multipart, $headers);
 }
 echo 'success';
