@@ -8,7 +8,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
   <div class="container"><img src="/layout/images/title.gallery.png" alt=""><br>
       <a href="#page" class="button button--orange">о выставке</a><a href="/buy/" class="button button--brown">купить билет</a></div>
 </div>
-<div class="page">
+<div class="page no-padding-bottom">
   <div class="container">
     <div class="row gallery__description">
       <div class="col-xs-5">
@@ -44,6 +44,10 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
       <h2 class="no-margin-top xxl-margin-bottom">Звёзды говорят</h2>
       <img src="/layout/images/divider.png" alt="">
+  </div>
+</div>
+<div class="page no-padding-bottom" style="background: url(/layout/images/fade3.png) top center no-repeat">
+    <div class="center">
       <?php
           $APPLICATION->IncludeComponent("bitrix:news.list", "quotes",
           array(
@@ -116,7 +120,9 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     <div class="divider divider--thin m-margin-top m-margin-bottom"></div>
     <div class="row m-margin-bottom">
       <div class="col-xs-3">
-        <h6>хочу <br/>спросить</h6><a href="#" class="social"><img src="/layout/images/fb.png" alt=""></a><a href="#" class="social"><img src="/layout/images/vk.png" alt=""></a>
+        <h6>хочу <br/>спросить</h6>
+        <a href="https://www.facebook.com/events/1685897541657325/" class="social"><img src="/layout/images/fb.png" alt=""></a>
+        <a href="http://vk.com/club50218982" class="social"><img src="/layout/images/vk.png" alt=""></a>
       </div>
       <div class="col-xs-9">
         <h6 class="xxl-margin-left">хочу <br/>посетить</h6>
