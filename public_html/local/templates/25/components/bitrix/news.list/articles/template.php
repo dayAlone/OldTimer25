@@ -12,7 +12,7 @@
                 <div class='preview__image' style="background-image:url(<?=$item['PREVIEW_PICTURE']['SRC']?>);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=$item['PREVIEW_PICTURE']['SRC']?>', sizingMethod='scale');-ms-filter: &quot;progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=$item['PREVIEW_PICTURE']['SRC']?>', sizingMethod='scale')&quot;;"></div>
                 <div class='preview__title'><?=$item['NAME']?></div>
             <? endif;?>
-            <p class="preview__text"><?=$item['PREVIEW_TEXT']?></p>
+            <div class="preview__text"><?=$item['PREVIEW_TEXT']?></div>
         </div>
     </div>
     <? if($key % 3 == 0 && $key != 0):?>

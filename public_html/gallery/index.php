@@ -26,12 +26,12 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     <?php
         $APPLICATION->IncludeComponent("bitrix:news.list", "articles",
         array(
-            "IBLOCK_ID"           => 44,
+            "IBLOCK_ID"           => 40,
             "NEWS_COUNT"          => "99999",
             "SORT_BY1"            => "SORT",
             "SORT_ORDER1"         => "ASC",
             "PROPERTY_CODE"       => array('LINK'),
-            "PARENT_SECTION_CODE"      => 'best',
+            "PARENT_SECTION_CODE"      => 'galler',
             "CACHE_TYPE"          => "A",
             "DISPLAY_PANEL"       => "N",
             "SET_TITLE"           => "N"
@@ -39,15 +39,16 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
            false
         );
     ?>
+
+  </div>
+</div>
+<div class="page no-padding-bottom" style="background: url(/layout/images/fade.png) top center no-repeat">
+    <div class="container">
     <div class="center m-margin-top">
       <a href="/buy/" class="button button--orange xxl-margin-bottom">КУПИТЬ БИЛЕТ ОНЛАЙН</a><br>
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
       <h2 class="no-margin-top xxl-margin-bottom">Звёзды говорят</h2>
       <img src="/layout/images/divider.png" alt="">
-  </div>
-</div>
-<div class="page no-padding-bottom" style="background: url(/layout/images/fade3.png) top center no-repeat">
-    <div class="center">
       <?php
           $APPLICATION->IncludeComponent("bitrix:news.list", "quotes",
           array(
@@ -64,9 +65,12 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
              false
           );
       ?>
-      <img src="/layout/images/divider.png" alt="">
     </div>
-
+</div>
+</div>
+<div class="page no-padding-bottom" style="background: url(/layout/images/fade.png) 50% -50px no-repeat">
+  <div class="container">
+      <div class='center'><img src="/layout/images/divider.png" alt=""></div>
     <div class="center xl-margin-top"><a href="/buy/" class="button button--orange xxl-margin-bottom">ПОСЕТИТЬ ВЫСТАВКУ</a><br>
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
       <h2 class="no-margin-top xs-margin-bottom">15 лет успеха</h2>
@@ -94,7 +98,12 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
         <p>Олдтаймер-Галерея – место, где можно приятно и полезно провести семейные выходные. Посетителей любого возраста здесь ждёт много интересного.</p>
       </div>
     </div>
-    <div class="center"><a href="/buy/" class="button button--brown xxl-margin-bottom">УВИДЕТЬ СВОИМИ ГЛАЗАМИ</a><br>
+</div>
+</div>
+<div class="page no-padding-bottom" style="background: url(/layout/images/fade.png) 50% -50px no-repeat">
+<div class="container">
+    <div class="center">
+        <a href="/buy/" class="button button--brown xxl-margin-bottom">УВИДЕТЬ СВОИМИ ГЛАЗАМИ</a><br>
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
       <h4>5 марта 2016 в 14:00<br>в КВЦ Сокольники, в конференц-зале пав.4<br>состоится</h4>
       <h2 class="no-margin-top xs-margin-bottom">Конференция на тему:</h2>
