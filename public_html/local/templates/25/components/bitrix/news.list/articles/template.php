@@ -2,6 +2,8 @@
 <?foreach ($arResult['ITEMS'] as $key=>$item):
     $key += 1;
     $link = $item['PROPERTIES']['LINK']['VALUE'];
+    $small = CFile::ResizeImageGet(CFile::GetFileArray($item['PREVIEW_PICTURE']['ID']), Array("width" => 600, "height" => 600), BX_RESIZE_IMAGE_PROPORTIONAL, false, Array("name" => "sharpen", "precision" => 15), false, 75);
+	$item['PREVIEW_PICTURE']['SRC'] = $small['src'];
     ?>
     <div class="col-xs-4">
         <div class="preview">
