@@ -4560,6 +4560,8 @@ svg g {
   font-size: 35px;
   margin-top: 10px;
   font-family: 'Oranienbaum';
+  line-height: 1.1;
+  margin-bottom: 7px;
 }
 .page .year__divider {
   margin: 15px 0 20px;

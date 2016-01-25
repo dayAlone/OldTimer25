@@ -26,12 +26,12 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     <?php
         $APPLICATION->IncludeComponent("bitrix:news.list", "articles",
         array(
-            "IBLOCK_ID"           => 40,
+            "IBLOCK_ID"           => 44,
             "NEWS_COUNT"          => "99999",
             "SORT_BY1"            => "SORT",
             "SORT_ORDER1"         => "ASC",
             "PROPERTY_CODE"       => array('LINK'),
-            "PARENT_SECTION_CODE"      => 'galler',
+            "PARENT_SECTION_CODE"      => 'best',
             "CACHE_TYPE"          => "A",
             "DISPLAY_PANEL"       => "N",
             "SET_TITLE"           => "N"
@@ -68,7 +68,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     </div>
 </div>
 </div>
-<div class="page no-padding-bottom" style="background: url(/layout/images/fade.png) 50% -50px no-repeat">
+<div class="page no-padding-bottom" style="background: url(/layout/images/fade.png) 50% center no-repeat">
   <div class="container">
       <div class='center'><img src="/layout/images/divider.png" alt=""></div>
     <div class="center xl-margin-top"><a href="/buy/" class="button button--orange xxl-margin-bottom">ПОСЕТИТЬ ВЫСТАВКУ</a><br>
@@ -100,7 +100,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     </div>
 </div>
 </div>
-<div class="page no-padding-bottom" style="background: url(/layout/images/fade.png) 50% -50px no-repeat">
+<div class="page" style="background: url(/layout/images/fade.png) 50% -50px no-repeat">
 <div class="container">
     <div class="center">
         <a href="/buy/" class="button button--brown xxl-margin-bottom">УВИДЕТЬ СВОИМИ ГЛАЗАМИ</a><br>
@@ -130,8 +130,8 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     <div class="row m-margin-bottom">
       <div class="col-xs-3">
         <h6>хочу <br/>спросить</h6>
-        <a href="https://www.facebook.com/events/1685897541657325/" class="social"><img src="/layout/images/fb.png" alt=""></a>
-        <a href="http://vk.com/club50218982" class="social"><img src="/layout/images/vk.png" alt=""></a>
+        <a href="https://www.facebook.com/events/1685897541657325/" target='_blank' class="social"><img src="/layout/images/fb.png" alt=""></a>
+        <a href="http://vk.com/club50218982" target='_blank' class="social"><img src="/layout/images/vk.png" alt=""></a>
       </div>
       <div class="col-xs-9">
         <h6 class="xxl-margin-left">хочу <br/>посетить</h6>
