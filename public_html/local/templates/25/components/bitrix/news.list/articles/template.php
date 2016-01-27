@@ -4,6 +4,7 @@
     $link = $item['PROPERTIES']['LINK']['VALUE'];
     $small = CFile::ResizeImageGet(CFile::GetFileArray($item['PREVIEW_PICTURE']['ID']), Array("width" => 300, "height" => 300), BX_RESIZE_IMAGE_PROPORTIONAL, false, Array("name" => "sharpen", "precision" => 15), false, 75);
 	$item['PREVIEW_PICTURE']['SRC'] = $small['src'];
+    $item['NAME'] = html_entity_decode($item['NAME']);
     ?>
     <div class="col-xs-4">
         <div class="preview">
