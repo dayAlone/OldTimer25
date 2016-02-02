@@ -1652,6 +1652,7 @@ svg g {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
+  background-repeat: no-repeat;
   padding-bottom: 110%;
   width: 105%;
 }
