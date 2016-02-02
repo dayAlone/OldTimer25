@@ -4549,7 +4549,7 @@ svg g {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
-  padding-bottom: 100%;
+  padding-bottom: 110%;
   width: 105%;
 }
 .page .year__title {
