@@ -4550,11 +4550,7 @@ svg g {
   -moz-background-size: cover;
   background-size: cover;
   padding-bottom: 100%;
-  border: 1px solid #dbdbdb;
-}
-.page .year__image-frame {
-  padding: 11px;
-  border: 1px solid #0069c6;
+  width: 105%;
 }
 .page .year__title {
   font-size: 35px;
