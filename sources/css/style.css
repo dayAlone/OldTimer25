@@ -1649,9 +1649,9 @@ svg g {
   margin-top: 40px;
 }
 .page .year__image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   padding-bottom: 100%;
   width: 105%;
 }
