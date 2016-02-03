@@ -61,7 +61,7 @@ $APPLICATION->SetPageProperty('body_class', "index");
             "SORT_BY1"            => "SORT",
             "SORT_ORDER1"         => "ASC",
             "PROPERTY_CODE"       => array('LINK'),
-            "PARENT_SECTION_CODE" => '1964',
+            "PARENT_SECTION_CODE" => '1924',
             "CACHE_TYPE"          => "A",
             "DISPLAY_PANEL"       => "N",
             "SET_TITLE"           => "N"
