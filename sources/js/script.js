@@ -70,7 +70,7 @@
     slider = document.getElementsByClassName('steps')[0];
     if ($(slider).length > 0) {
       noUiSlider.create(slider, {
-        start: [3, 4],
+        start: [1, 2],
         limit: 1,
         behaviour: 'drag',
         connect: true,
