@@ -3915,9 +3915,16 @@ a:hover {
   filter: alpha(opacity=50);
 }
 .index .toolbar:after {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  background-color: #000e29;
+}
+.reasons .toolbar:after {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  background-color: #083f68;
 }
 .gallery .toolbar:after {
   background: #931118;
@@ -3941,6 +3948,10 @@ a:hover {
 .toolbar .nav__item:hover,
 .toolbar .nav__item--active {
   color: #d2091d;
+}
+.gallery .toolbar .nav__item:hover,
+.gallery .toolbar .nav__item--active {
+  color: #ff9219;
 }
 .toolbar .nav__item:first-of-type {
   margin-left: 0;
