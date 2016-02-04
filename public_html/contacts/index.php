@@ -1,7 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('body_class', "contacts");
-$APPLICATION->SetTitle('Проезд / расписание / билеты');
+$APPLICATION->SetTitle('Проезд / Расписание / Билеты');
 ?>
 <div class="header">
   <div class="container"><img src="/layout/images/title.contacts.png" alt=""></div>
