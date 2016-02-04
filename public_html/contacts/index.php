@@ -41,7 +41,8 @@ $APPLICATION->SetTitle('Проезд / расписание / билеты');
     <div class="modal-content"><a data-dismiss="modal" href="#" class="close"></a>
       <h3 class="center">СХЕМА ВЫСТАВОЧНОГО ЦЕНТРА С ПАРКОВКАМИ</h3>
       <div class="center">
-        <p>Выставочный центр предоставляет посетителям около 2000 паковочных машиномест. <br>Стоимость въезда на территорию КВЦ "Сокольники" и парковки – 250 руб.</p><img src="/layout/images/auto.jpg">
+        <p>Выставочный центр предоставляет посетителям около 2000 паковочных машиномест. <br>Стоимость въезда на территорию КВЦ "Сокольники" и парковки – 250 руб.</p>
+        <img src="http://23.oldtimer.ru/layout/images/auto.jpg">
       </div>
     </div>
   </div>
@@ -52,7 +53,7 @@ $APPLICATION->SetTitle('Проезд / расписание / билеты');
       <h3 class="center">КАК ДОБРАТЬСЯ НА МЕТРО</h3>
       <div class="center">
         <p>Выставочный центр располагается на территории парка «Сокольники», <br>в 10 минутах ходьбы от станции метро «Сокольники».</p>
-        <img src="/layout/images/zu_fuss.jpg">
+        <img src="/layout/images/walk1.jpg">
       </div>
     </div>
   </div>
@@ -60,14 +61,14 @@ $APPLICATION->SetTitle('Проезд / расписание / билеты');
 <div id="Car" tabindex="-1" role="dialog" aria-hidden="true" data-parsley-validate class="modal fade">
   <div class="modal-dialog modal-lg">
     <div class="modal-content"><a data-dismiss="modal" href="#" class="close"></a>
-      <h3 class="center">СХЕМА ВЫСТАВОЧНОГО ЦЕНТРА С ПАРКОВКАМИ</h3>
+      <h3 class="center">КАК ДОБРАТЬСЯ НА АВТОМОБИЛЕ</h3>
       <div class="center">
           <p>
               Заезд на автомобиле осуществляется через 3-й Лучевой просек.<br>
               Въезд на территорию – 300 руб. <br>
               Машину можно оставить на специально оборудованных паркингах.
           </p>
-          <img src="/layout/images/auto.jpg">
+          <img src="http://23.oldtimer.ru/layout/images/auto.jpg">
       </div>
     </div>
   </div>

@@ -21,7 +21,7 @@ $APPLICATION->SetTitle('Гараж особого назначения');
           "ELEMENT_CODE"  => 'index',
           "CHECK_DATES"   => "N",
           "IBLOCK_TYPE"   => "25",
-          "SET_TITLE"     => "Y",
+          "SET_TITLE"     => "N",
           "CACHE_TYPE"    => "A",
           "FIELD_CODE"    => array('PREVIEW_PICTURE'),
           "PROPERTY_CODE" => array("IMAGES")
