@@ -15,7 +15,6 @@
     $rsSites = CSite::GetByID(SITE_ID);
     $arSite  = $rsSites->Fetch();
     $APPLICATION->ShowTitle();
-      echo ' | ' . $arSite['NAME'];
     ?></title>
   <?
     $APPLICATION->ShowHead();

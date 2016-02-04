@@ -33,7 +33,7 @@ $APPLICATION->SetTitle('Гараж особого назначения');
       Не упустите свой шанс увидеть её. Уникальная выставка в Сокольниках <br/>
       продлится лишь пять дней - с 4 по 8 марта.
     </p>
-    <div class="center"><a href="#" class="button">увидеть своими глазами</a></div>
+    <div class="center"><a href="/contacts/" class="button">увидеть своими глазами</a></div>
     <div class="center">
       <h2>Кремлёвская коллекция<span>5 дней в Сокольниках</span></h2>
     </div>
@@ -72,7 +72,7 @@ $APPLICATION->SetTitle('Гараж особого назначения');
     ?>
     <div class="center">
         <a href="#years" class="button button--blue">выбрать другой период</a>
-        <a href="/buy/" class="button">посетить выставку</a>
+        <a href="/contacts/" class="button">посетить выставку</a>
     </div>
     <div class="center">
       <div class="divider"></div>
@@ -92,7 +92,7 @@ $APPLICATION->SetTitle('Гараж особого назначения');
                 "CACHE_GROUPS"        => "Y"
             )
         );?>
-    <div class="center"><a href="/buy/" class="button">посетить выставку</a></div>
+    <div class="center"><a href="/buy/" class="button">Купить билет онлайн</a></div>
   </div>
 </div>
 <?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');?>
