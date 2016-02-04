@@ -1,7 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('body_class', "buy");
-$APPLICATION->SetTitle('Билет он-лайн');
+$APPLICATION->SetTitle('Билет онлайн');
 $srt = urlencode("Билет на Олдтаймер-Галерею и экспозицию ГОН");
 ?>
 <header class="header">
