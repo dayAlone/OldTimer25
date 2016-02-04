@@ -3914,6 +3914,12 @@ a:hover {
   -ms-filter: none;
   filter: none;
 }
+.contacts .toolbar:after {
+  background-color: #8d1d00;
+}
+.buy .toolbar:after {
+  background-color: #4f0a29;
+}
 .index .toolbar:after {
   opacity: 1;
   -ms-filter: none;
