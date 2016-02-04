@@ -111,7 +111,7 @@ $(document).ready ->
 		$('html, body').stop().animate { scrollTop: $('h3').offset().top - 110 }, '500', 'swing'
 		e.preventDefault()
 	$('a[href="#page"]').on 'click', (e)->
-		$('html, body').stop().animate { scrollTop: $('#i15').offset().top - 110 }, '500', 'swing'
+		$('html, body').stop().animate { scrollTop: $('#i15 h2').offset().top - 110 }, '500', 'swing'
 		e.preventDefault()
 
 	$(".years__item").on 'click', (e)->

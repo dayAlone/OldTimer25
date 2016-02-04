@@ -20680,7 +20680,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
     });
     $('a[href="#page"]').on('click', function(e) {
       $('html, body').stop().animate({
-        scrollTop: $('#i15').offset().top - 110
+        scrollTop: $('#i15 h2').offset().top - 110
       }, '500', 'swing');
       return e.preventDefault();
     });
