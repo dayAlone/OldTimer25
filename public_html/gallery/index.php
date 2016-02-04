@@ -1,7 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('body_class', "gallery");
-$APPLICATION->SetTitle('Олдтаймер-галерея');
+$APPLICATION->SetTitle('Олдтаймер-Галерея');
 $srt = urlencode("Билет на Олдтаймер-Гаререю и экспозицию ГОН");
 ?>
 <div class="header">
