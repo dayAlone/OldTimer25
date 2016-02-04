@@ -14,12 +14,8 @@
   <title><?php
     $rsSites = CSite::GetByID(SITE_ID);
     $arSite  = $rsSites->Fetch();
-    if($APPLICATION->GetCurDir() != '/' && $APPLICATION->GetCurDir() != "/eng/") {
-      $APPLICATION->ShowTitle();
-
+    $APPLICATION->ShowTitle();
       echo ' | ' . $arSite['NAME'];
-    }
-    else echo $arSite['NAME'];
     ?></title>
   <?
     $APPLICATION->ShowHead();

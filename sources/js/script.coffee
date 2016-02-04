@@ -105,13 +105,13 @@ $(document).ready ->
 
 
 	$('a[href="#years"]').on 'click', (e)->
-		$('html, body').stop().animate { scrollTop: $('h2').offset().top - 50 }, '500', 'swing'
+		$('html, body').stop().animate { scrollTop: $('h2').offset().top - 110 }, '500', 'swing'
 		e.preventDefault()
 	$('a[href="#start"]').on 'click', (e)->
-		$('html, body').stop().animate { scrollTop: $('h3').offset().top - 50 }, '500', 'swing'
+		$('html, body').stop().animate { scrollTop: $('h3').offset().top - 110 }, '500', 'swing'
 		e.preventDefault()
 	$('a[href="#page"]').on 'click', (e)->
-		$('html, body').stop().animate { scrollTop: $('.page').offset().top - 50 }, '500', 'swing'
+		$('html, body').stop().animate { scrollTop: $('#i15').offset().top - 110 }, '500', 'swing'
 		e.preventDefault()
 
 	$(".years__item").on 'click', (e)->

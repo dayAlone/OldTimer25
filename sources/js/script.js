@@ -117,19 +117,19 @@
     }
     $('a[href="#years"]').on('click', function(e) {
       $('html, body').stop().animate({
-        scrollTop: $('h2').offset().top - 50
+        scrollTop: $('h2').offset().top - 110
       }, '500', 'swing');
       return e.preventDefault();
     });
     $('a[href="#start"]').on('click', function(e) {
       $('html, body').stop().animate({
-        scrollTop: $('h3').offset().top - 50
+        scrollTop: $('h3').offset().top - 110
       }, '500', 'swing');
       return e.preventDefault();
     });
     $('a[href="#page"]').on('click', function(e) {
       $('html, body').stop().animate({
-        scrollTop: $('.page').offset().top - 50
+        scrollTop: $('#i15').offset().top - 110
       }, '500', 'swing');
       return e.preventDefault();
     });

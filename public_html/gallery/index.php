@@ -68,10 +68,10 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
     </div>
 </div>
 </div>
-<div class="page no-padding-bottom" style="background: url(/layout/images/fade.png) 50% center no-repeat">
+<div id="i15" class="page no-padding-bottom" style="background: url(/layout/images/fade.png) 50% center no-repeat">
   <div class="container">
       <div class='center'><img src="/layout/images/divider.png" alt=""></div>
-    <div class="center xl-margin-top"><a href="/buy/" class="button button--orange xxl-margin-bottom">ПОСЕТИТЬ ВЫСТАВКУ</a><br>
+    <div class="center xl-margin-top"><a href="/contacts/" class="button button--orange xxl-margin-bottom">ПОСЕТИТЬ ВЫСТАВКУ</a><br>
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
       <h2 class="no-margin-top xs-margin-bottom">15 лет успеха</h2>
     </div>
@@ -103,7 +103,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
 <div class="page" style="background: url(/layout/images/fade.png) 50% -50px no-repeat">
 <div class="container">
     <div class="center">
-        <a href="/buy/" class="button button--brown xxl-margin-bottom">УВИДЕТЬ СВОИМИ ГЛАЗАМИ</a><br>
+        <a href="/contacts/" class="button button--brown xxl-margin-bottom">УВИДЕТЬ СВОИМИ ГЛАЗАМИ</a><br>
       <div class="divider divider--yellow xs-margin-bottom"></div><br>
       <h4>5 марта 2016 в 14:00<br>в КВЦ Сокольники, в конференц-зале пав.4<br>состоится</h4>
       <h2 class="no-margin-top xs-margin-bottom">Конференция на тему:</h2>
@@ -119,7 +119,7 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
           – ГУОБДД,<br>
           – Евразийская экономическая комиссия,<br>
           – Администратор систем электронных паспортов ТС,<br>
-          – Ингосстрах.
+          – Страховщики.
 
         </p>
         <p>Повестка дня конференции и круг обсуждаемых тем будут определяться вашими вопросами, которые можно задать заранее. Это позволит докладчикам лучше подготовиться и дать вам более полную информацию.</p>

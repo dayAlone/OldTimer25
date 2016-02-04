@@ -1,6 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('body_class', "index");
+$APPLICATION->SetTitle('Гараж особого назначения');
 ?>
 <header class="header">
   <div class="container">
