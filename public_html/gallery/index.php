@@ -127,11 +127,11 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
       <div class="col-xs-6"><br><img src="/layout/images/gallery.car.png" alt=""></div>
     </div>
     <div class="divider divider--thin m-margin-top m-margin-bottom"></div>
-    <div class="row m-margin-bottom">
+    <div class="row m-margin-bottom" id="reg">
       <div class="col-xs-3">
         <h6>хочу <br/>спросить</h6>
         <a href="https://www.facebook.com/events/1685897541657325/" target='_blank' class="social"><img src="/layout/images/fb.png" alt=""></a>
-        <a href="http://vk.com/club50218982" target='_blank' class="social"><img src="/layout/images/vk.png" alt=""></a>
+        <a href="http://vk.com/topic-50218982_33576936" target='_blank' class="social"><img src="/layout/images/vk.png" alt=""></a>
       </div>
       <div class="col-xs-9">
         <h6 class="xxl-margin-left">хочу <br/>посетить</h6>
