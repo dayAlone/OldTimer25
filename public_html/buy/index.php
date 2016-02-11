@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('body_class', "buy");
 $APPLICATION->SetTitle('Билет онлайн');
 $srt = "Билет на «Олдтаймер-Галерею» и экспозицию «95 лет ГОН»";
-if (intval($_GET['card']) > 0) $srt .= "+ Открытка ".$_GET['card'];
+if (intval($_GET['card']) > 0) $srt .= " + Открытка ".$_GET['card'];
 $srt = urlencode($srt);
 ?>
 <header class="header">
