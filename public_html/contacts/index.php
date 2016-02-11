@@ -68,7 +68,7 @@ $APPLICATION->SetTitle('Проезд / Расписание / Билеты');
           <label for="card-5" class="card__label"><img src="/layout/images/card-5.jpg" alt=""><br></label>
         </div>
       </div>
-      <button type="submit" class="button button--brown m-margin-top l-margin-bottom">купить билет онлайн</button>
+      <button type="submit" class="button button--brown m-margin-top l-margin-bottom">перейти к оплате</button>
     </form>
   </div>
 </div>
