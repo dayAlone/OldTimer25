@@ -20666,6 +20666,14 @@ if ('undefined' !== typeof window.ParsleyValidator)
         return getData(parseInt(e[0]));
       });
     }
+    if (location.hash === '#card') {
+      if ($('#Present').hasClass('hidden')) {
+        $('#Present').removeClass('hidden');
+      }
+      $('html, body').stop().animate({
+        scrollTop: $('#Present').offset().top + 2
+      }, '500', 'swing');
+    }
     $('a[href="#years"]').on('click', function(e) {
       $('html, body').stop().animate({
         scrollTop: $('h2').offset().top - 110
@@ -20681,6 +20689,15 @@ if ('undefined' !== typeof window.ParsleyValidator)
     $('a[href="#page"]').on('click', function(e) {
       $('html, body').stop().animate({
         scrollTop: $('#i15 h2').offset().top - 110
+      }, '500', 'swing');
+      return e.preventDefault();
+    });
+    $('a[href="#Present"]').on('click', function(e) {
+      if ($('#Present').hasClass('hidden')) {
+        $('#Present').removeClass('hidden');
+      }
+      $('html, body').stop().animate({
+        scrollTop: $('#Present').offset().top + 2
       }, '500', 'swing');
       return e.preventDefault();
     });

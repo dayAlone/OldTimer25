@@ -103,6 +103,10 @@ $(document).ready ->
 			.on 'set', (e)->
 				getData parseInt e[0]
 
+	if location.hash == '#card'
+		if $('#Present').hasClass 'hidden'
+			$('#Present').removeClass 'hidden'
+		$('html, body').stop().animate { scrollTop: $('#Present').offset().top + 2 }, '500', 'swing'
 
 	$('a[href="#years"]').on 'click', (e)->
 		$('html, body').stop().animate { scrollTop: $('h2').offset().top - 110 }, '500', 'swing'
@@ -112,6 +116,11 @@ $(document).ready ->
 		e.preventDefault()
 	$('a[href="#page"]').on 'click', (e)->
 		$('html, body').stop().animate { scrollTop: $('#i15 h2').offset().top - 110 }, '500', 'swing'
+		e.preventDefault()
+	$('a[href="#Present"]').on 'click', (e)->
+		if $('#Present').hasClass 'hidden'
+			$('#Present').removeClass 'hidden'
+		$('html, body').stop().animate { scrollTop: $('#Present').offset().top + 2 }, '500', 'swing'
 		e.preventDefault()
 
 	$(".years__item").on 'click', (e)->

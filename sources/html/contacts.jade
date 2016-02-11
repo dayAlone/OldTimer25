@@ -17,6 +17,8 @@ include includes/toolbar
 					| Билет в кассе – 700 рублей <br/>
 					| Семейный билет - 2000 рублей <br/>
 					a(data-toggle="modal" data-target="#Price" href="#Price") Скидки и льготы
+					br
+					a(href="#Present") Подарить билет
 					
 			.col-xs-4
 				h4 Время работы
@@ -39,6 +41,43 @@ include includes/toolbar
 					
 		.center
 			a.button.button--orange(href="/buy.html") купить билет онлайн
+		
+		
+		form#Present.center.hidden(action='/buy/')
+			.divider.divider--yellow.s-margin-bottom
+			h2.m-margin-bottom Олдтаймер-Галерея — в подарок
+			h4.
+				День влюблённых, 23 февраля, 8 марта – весна щедра на праздники!<br/>
+				Вы уже подумали о подарках? Есть отличный вариант! Оформите электронный билет на Олдтаймер-Галерею, выберите и приложите к своему поздравлению тематическую ретро-открытку.<br/>
+				Такому подарку будут рады!<br/>
+			.cards.m-margin-top
+				.cards__description Выберите поздравительную открытку
+				.card
+					input.hidden(name='card', value='1', type='radio', id='card-1', checked)
+					label.card__label(for='card-1')
+						img(src="/layout/images/card-1.jpg", alt="")
+						br
+				.card
+					input.hidden(name='card', value='2', type='radio', id='card-2')
+					label.card__label(for='card-2')
+						img(src="/layout/images/card-2.jpg", alt="")
+						br
+				.card
+					input.hidden(name='card', value='3', type='radio', id='card-3')
+					label.card__label(for='card-3')
+						img(src="/layout/images/card-3.jpg", alt="")
+						br
+				.card
+					input.hidden(name='card', value='4', type='radio', id='card-4')
+					label.card__label(for='card-4')
+						img(src="/layout/images/card-4.jpg", alt="")
+						br
+				.card
+					input.hidden(name='card', value='5', type='radio', id='card-5')
+					label.card__label(for='card-5')
+						img(src="/layout/images/card-5.jpg", alt="")
+						br
+			button.button.button--brown.m-margin-top.l-margin-bottom(type="submit") купить билет онлайн
 			
 .modal.fade(id="Scheme", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
 	.modal-dialog.modal-lg

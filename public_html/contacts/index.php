@@ -15,7 +15,9 @@ $APPLICATION->SetTitle('Проезд / Расписание / Билеты');
 
           Билет <a href="/buy/">онлайн </a>– 500 рублей <br/>
           Билет в кассе – 700 рублей <br/>
-          Семейный билет – 2000 рублей <br/><a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a>
+          Семейный билет – 2000 рублей <br/>
+          <a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a>
+          <a href="#Present">Подарить билет</a>
         </p>
       </div>
       <div class="col-xs-4">
@@ -34,6 +36,39 @@ $APPLICATION->SetTitle('Проезд / Расписание / Билеты');
       </div>
     </div>
     <div class="center"><a href="/buy/" class="button button--orange">купить билет онлайн</a></div>
+    <form id="Present" action="/buy/" class="center hidden">
+      <div class="divider divider--yellow s-margin-bottom"></div>
+      <h2 class="m-margin-bottom">Олдтаймер-Галерея — в подарок</h2>
+      <h4>
+        День влюблённых, 23 февраля, 8 марта – весна щедра на праздники!<br/>
+        Вы уже подумали о подарках? Есть отличный вариант! Оформите электронный билет на Олдтаймер-Галерею, выберите и приложите к своему поздравлению тематическую ретро-открытку.<br/>
+        Такому подарку будут рады!<br/>
+      </h4>
+      <div class="cards m-margin-top">
+        <div class="cards__description">Выберите поздравительную открытку</div>
+        <div class="card">
+          <input name="card" value="1" type="radio" id="card-1" checked class="hidden">
+          <label for="card-1" class="card__label"><img src="/layout/images/card-1.jpg" alt=""><br></label>
+        </div>
+        <div class="card">
+          <input name="card" value="2" type="radio" id="card-2" class="hidden">
+          <label for="card-2" class="card__label"><img src="/layout/images/card-2.jpg" alt=""><br></label>
+        </div>
+        <div class="card">
+          <input name="card" value="3" type="radio" id="card-3" class="hidden">
+          <label for="card-3" class="card__label"><img src="/layout/images/card-3.jpg" alt=""><br></label>
+        </div>
+        <div class="card">
+          <input name="card" value="4" type="radio" id="card-4" class="hidden">
+          <label for="card-4" class="card__label"><img src="/layout/images/card-4.jpg" alt=""><br></label>
+        </div>
+        <div class="card">
+          <input name="card" value="5" type="radio" id="card-5" class="hidden">
+          <label for="card-5" class="card__label"><img src="/layout/images/card-5.jpg" alt=""><br></label>
+        </div>
+      </div>
+      <button type="submit" class="button button--brown m-margin-top l-margin-bottom">купить билет онлайн</button>
+    </form>
   </div>
 </div>
 <div id="Scheme" tabindex="-1" role="dialog" aria-hidden="true" data-parsley-validate class="modal fade">
