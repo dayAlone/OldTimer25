@@ -20666,7 +20666,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
         return getData(parseInt(e[0]));
       });
     }
-    if (location.hash === '#card') {
+    if (location.hash === '#Present') {
       if ($('#Present').hasClass('hidden')) {
         $('#Present').removeClass('hidden');
       }
