@@ -17,6 +17,7 @@ $APPLICATION->SetTitle('Проезд / Расписание / Билеты');
           Билет в кассе – 700 рублей <br/>
           Семейный билет – 2000 рублей <br/>
           <a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a>
+          <br>
           <a href="#Present">Подарить билет</a>
         </p>
       </div>
