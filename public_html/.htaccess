@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^rally/ /races/ [R=302,L]
+RewriteRule ^promo/ /buy/?promo [R=302,L]
