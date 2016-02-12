@@ -10,7 +10,7 @@ $cost = 1000;
 $srt = urlencode($srt);
 ?>
 <header class="header">
-  <div class="container"><img src="/layout/images/title.buy.png" alt=""></div>
+  <div class="container"><img src="/layout/images/promo.png" alt=""></div>
 </header>
 <div class="page">
   <div class="container">
