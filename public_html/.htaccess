@@ -1,2 +1,1 @@
 RewriteEngine on
-RewriteRule ^promo/ /buy/?promo [R=302,L]
