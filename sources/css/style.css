@@ -1290,7 +1290,7 @@ svg g {
   padding-left: 480px;
 }
 .mouse {
-  position: absolute;
+  position: fixed;
   right: 40px;
   bottom: 40px;
   margin-left: -25px;
