@@ -1358,18 +1358,6 @@ svg g {
   border-bottom: 2px solid #fff;
   margin: 0 0 3px 6px;
 }
-.mouse__arrows span.unu {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -ms-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-  -webkit-animation-direction: alternate;
-  -moz-animation-direction: alternate;
-  -o-animation-direction: alternate;
-  -ms-animation-direction: alternate;
-  animation-direction: alternate;
-}
 .mouse__arrows span.unu,
 .mouse__arrows span.doi,
 .mouse__arrows span.trei {
@@ -1378,6 +1366,18 @@ svg g {
   -o-animation: mouse-scroll 1s infinite;
   -ms-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  animation-direction: alternate;
+}
+.mouse__arrows span.unu {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 .mouse__arrows span.doi {
   -webkit-animation-delay: 0.2s;
@@ -1392,11 +1392,6 @@ svg g {
   -o-animation-delay: 0.3s;
   -ms-animation-delay: 0.3s;
   animation-delay: 0.3s;
-  -webkit-animation-direction: alternate;
-  -moz-animation-direction: alternate;
-  -o-animation-direction: alternate;
-  -ms-animation-direction: alternate;
-  animation-direction: alternate;
 }
 .page {
   float: left;

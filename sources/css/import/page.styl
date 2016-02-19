@@ -34,20 +34,15 @@
             border-right 2px solid white
             border-bottom 2px solid white
             margin 0 0 3px 6px
-            &.unu
-                animation-delay .1s
-                animation-direction alternate
-
             &.unu, &.doi, &.trei
                 animation mouse-scroll 1s infinite
-
+                animation-direction: alternate
+            &.unu
+                animation-delay .1s
             &.doi
                 animation-delay .2s
-
             &.trei
                 animation-delay .3s
-                animation-direction alternate
-
 @keyframes mouse-wheel
     0%
         opacity: 1
