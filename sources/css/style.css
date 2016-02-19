@@ -1269,9 +1269,9 @@ svg g {
   min-height: 450px;
 }
 .index .header {
-  min-height: 800px;
+  min-height: 700px;
   display: block;
-  padding-top: 238px;
+  padding-top: 188px;
 }
 .index .header h4 {
   text-transform: uppercase;
