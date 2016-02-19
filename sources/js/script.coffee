@@ -30,8 +30,15 @@ end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransit
 
 calculateLayout = ->
 
+agreementScroll = ->
+
+	if $(window).height() + $(window).scrollTop() >= $('.toolbar').outerHeight() + $('.header').outerHeight() + $('.page').outerHeight() - 100
+		$('.mouse').mod 'off', true
+	else if $('.mouse').hasMod 'off'
+		$('.mouse').mod 'off', false
 
 $(document).ready ->
+	$(window).on 'scroll',  _.throttle(agreementScroll, 100)
 
 	$('#Modal').on('show.bs.modal', (e)->
 		url = $(e.relatedTarget).data 'url'

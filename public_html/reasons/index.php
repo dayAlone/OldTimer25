@@ -5,6 +5,10 @@ $APPLICATION->SetTitle('12 причин посетить');
 ?>
 <div class="header">
   <div class="container"><img src="/layout/images/title.reasons.png" alt=""></div>
+  <div class='mouse'>
+      <div class="mouse__frame"><div class="mouse__wheel"></div></div>
+      <div class="mouse__arrows"><span class="unu"></span><span class="doi"></span><span class="trei"></span></div>
+  </div>
 </div>
 <div class="page">
   <div class="container">

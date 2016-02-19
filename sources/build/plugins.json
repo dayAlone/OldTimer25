@@ -19,6 +19,9 @@
       "js":["/bootstrap-datepicker/js/bootstrap-datepicker.js", "/bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js"],
       "css": "/bootstrap-datepicker/css/datepicker.css"
    },
+   "lodash":{
+       "js" : "/lodash/lodash.js"
+   },
    "bootstrap":{
       "js":[
          "/bootstrap/js/transition.js",

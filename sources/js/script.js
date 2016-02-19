@@ -1,5 +1,5 @@
 (function() {
-  var calculateLayout, delay, end, slickSettings, spinOptions;
+  var agreementScroll, calculateLayout, delay, end, slickSettings, spinOptions;
 
   slickSettings = {
     infinite: true,
@@ -37,8 +37,17 @@
 
   calculateLayout = function() {};
 
+  agreementScroll = function() {
+    if ($(window).height() + $(window).scrollTop() >= $('.toolbar').outerHeight() + $('.header').outerHeight() + $('.page').outerHeight() - 100) {
+      return $('.mouse').mod('off', true);
+    } else if ($('.mouse').hasMod('off')) {
+      return $('.mouse').mod('off', false);
+    }
+  };
+
   $(document).ready(function() {
     var getData, setSliderActive, slider;
+    $(window).on('scroll', _.throttle(agreementScroll, 100));
     $('#Modal').on('show.bs.modal', function(e) {
       var url;
       url = $(e.relatedTarget).data('url');
