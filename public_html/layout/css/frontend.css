@@ -4188,8 +4188,8 @@ svg g {
 }
 .mouse {
   position: absolute;
-  left: 35%;
-  bottom: 30px;
+  right: 40px;
+  bottom: 40px;
   margin-left: -25px;
 }
 .mouse__frame {
