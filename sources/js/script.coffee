@@ -31,8 +31,10 @@ end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransit
 calculateLayout = ->
 
 agreementScroll = ->
-
-	if $(window).height() + $(window).scrollTop() >= $('.toolbar').outerHeight() + $('.header').outerHeight() + $('.page').outerHeight() - 100
+	h = $('.toolbar').outerHeight() + $('.header').outerHeight() - 100
+	$('.page').each (key, el)->
+		h += $(el).outerHeight()
+	if $(window).height() + $(window).scrollTop() >= h
 		$('.mouse').mod 'off', true
 	else if $('.mouse').hasMod 'off'
 		$('.mouse').mod 'off', false

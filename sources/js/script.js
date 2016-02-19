@@ -38,7 +38,12 @@
   calculateLayout = function() {};
 
   agreementScroll = function() {
-    if ($(window).height() + $(window).scrollTop() >= $('.toolbar').outerHeight() + $('.header').outerHeight() + $('.page').outerHeight() - 100) {
+    var h;
+    h = $('.toolbar').outerHeight() + $('.header').outerHeight() - 100;
+    $('.page').each(function(key, el) {
+      return h += $(el).outerHeight();
+    });
+    if ($(window).height() + $(window).scrollTop() >= h) {
       return $('.mouse').mod('off', true);
     } else if ($('.mouse').hasMod('off')) {
       return $('.mouse').mod('off', false);
