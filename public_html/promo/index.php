@@ -5,8 +5,6 @@ $APPLICATION->SetTitle('Билет онлайн');
 $srt = "Билет на «Олдтаймер-Галерею» и экспозицию «95 лет ГОН»";
 $srt .= " + Промобилет";
 $cost = 1000;
-
-
 $srt = urlencode($srt);
 ?>
 <header class="header">

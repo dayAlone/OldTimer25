@@ -7,6 +7,10 @@ $srt = urlencode("Билет на Олдтаймер-Гаререю и эксп�
 <div class="header">
   <div class="container"><img src="/layout/images/title.gallery.png" alt=""><br>
       <a href="#page" class="button button--orange">о выставке</a><a href="/buy/" class="button button--brown">купить билет</a></div>
+  <div class='mouse'>
+      <div class="mouse__frame"><div class="mouse__wheel"></div></div>
+      <div class="mouse__arrows"><span class="unu"></span><span class="doi"></span><span class="trei"></span></div>
+  </div>
 </div>
 <div class="page no-padding-bottom">
   <div class="container">

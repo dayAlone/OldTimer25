@@ -9,6 +9,10 @@ $APPLICATION->SetTitle('Гараж Особого Назначения');
     <a href="#start" class="button">о выставке</a>
     <a href="/buy/" class="button button--blue">купить билет</a>
   </div>
+  <div class='mouse'>
+      <div class="mouse__frame"><div class="mouse__wheel"></div></div>
+      <div class="mouse__arrows"><span class="unu"></span><span class="doi"></span><span class="trei"></span></div>
+  </div>
 </header>
 <div class="page">
   <div class="container">
@@ -37,6 +41,8 @@ $APPLICATION->SetTitle('Гараж Особого Назначения');
     <div class="center">
       <h2>Кремлёвская коллекция<span>5 дней в Сокольниках</span></h2>
     </div>
+
+
 
     <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list","years",
         Array(

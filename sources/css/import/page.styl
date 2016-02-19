@@ -1,3 +1,64 @@
+.mouse
+    position absolute
+    left 35%
+    bottom 30px
+    margin-left -25px
+    &__frame
+        height 31px
+        width 20px
+        border-radius 10px
+        transform none
+        border 2px solid white
+        left -1px
+        position relative
+    &__wheel
+        height 5px
+        width 2px
+        display block
+        margin 5px auto
+        background white
+        position relative
+        animation mouse-wheel 1.2s ease infinite
+    &__arrows
+        margin-top 6px
+        span
+            display block
+            width 6px
+            height 6px
+            transform rotate(45deg)
+            border-right 2px solid white
+            border-bottom 2px solid white
+            margin 0 0 3px 6px
+            &.unu
+                animation-delay .1s
+                animation-direction alternate
+
+            &.unu, &.doi, &.trei
+                animation mouse-scroll 1s infinite
+
+            &.doi
+                animation-delay .2s
+
+            &.trei
+                animation-delay .3s
+                animation-direction alternate
+
+@keyframes mouse-wheel
+    0%
+        opacity: 1
+        transform: translateY(0)
+    100%
+        opacity: 0
+        transform: translateY(6px)
+
+@keyframes mouse-scroll
+    0%
+        opacity: 0
+    50%
+        opacity: .5
+    100%
+        opacity: 1
+
 .page
     full-width()
     padding-bottom 50px
